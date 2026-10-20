@@ -1,0 +1,25 @@
+# ============================================================
+# ARC CUSTOM CARRIER
+# ============================================================
+
+# Full Kuiper disk images are multi-GB artifacts.
+# Their SHA256 checkpoints are retained under evidence/.
+/build/*.img
+
+# Temporary mounted-image directories.
+/build/mnt_*/
+
+# Vivado transient/runtime products.
+# Keep .xpr, .srcs, bitstreams, XSA, logs and evidence.
+build/vivado/**/.Xil/
+build/vivado/**/*.cache/
+build/vivado/**/*.gen/
+build/vivado/**/*.hw/
+build/vivado/**/*.ip_user_files/
+build/vivado/**/*.runs/
+build/vivado/**/*.sim/
+
+# Common editor / OS temporary files.
+*~
+*.swp
+.DS_Store
