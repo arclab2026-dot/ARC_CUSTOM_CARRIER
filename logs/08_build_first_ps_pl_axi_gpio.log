@@ -1,0 +1,59 @@
+
+****** Vivado v2022.2 (64-bit)
+  **** SW Build 3671981 on Fri Oct 14 04:59:54 MDT 2022
+  **** IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+source tcl/08_build_first_ps_pl_axi_gpio.tcl -notrace
+============================================================
+ARC CUSTOM CARRIER - FIRST PS TO PL AXI DESIGN
+============================================================
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/mnt/xilinx/Xilinx_Vitis_2022_2/Vivado/2022.2/data/ip'.
+open_project: Time (s): cpu = 00:00:08 ; elapsed = 00:00:15 . Memory (MB): peak = 1769.484 ; gain = 155.195 ; free physical = 183 ; free virtual = 1313
+PROJECT_PART=xczu7ev-fbvb900-1-e
+Reading block design file </home/arc/ARC_Development/ARC_CUSTOM_CARRIER/build/vivado/arc_uzev_base/arc_uzev_base.srcs/sources_1/bd/system/system.bd>...
+Adding component instance block -- xilinx.com:ip:zynq_ultra_ps_e:3.4 - zynq_ultra_ps_e_0
+Successfully read diagram <system> from block design file </home/arc/ARC_Development/ARC_CUSTOM_CARRIER/build/vivado/arc_uzev_base/arc_uzev_base.srcs/sources_1/bd/system/system.bd>
+PROPERTY_FOUND=CONFIG.PSU__USE__M_AXI_GP0
+PROPERTY_FOUND=CONFIG.PSU__FPGA_PL0_ENABLE
+PROPERTY_FOUND=CONFIG.PSU__CRL_APB__PL0_REF_CTRL__FREQMHZ
+FABRIC_RESET_PROPERTY=CONFIG.PSU__NUM_FABRIC_RESETS
+Wrote  : </home/arc/ARC_Development/ARC_CUSTOM_CARRIER/build/vivado/arc_uzev_base/arc_uzev_base.srcs/sources_1/bd/system/system.bd> 
+AXI_MASTER_PRESENT=1
+PL_CLK0_PRESENT=1
+PL_RESETN0_PRESENT=1
+CRITICAL WARNING: [BD 41-737] Cannot set the parameter C_EXT_RESET_HIGH on /rst_ps_100m. It is read-only.
+WARNING: [BD 41-1306] The connection to interface pin </axi_gpio_0/gpio_io_o> is being overridden by the user with net <axi_gpio_0_gpio_io_o>. This pin will not be connected as a part of interface connection <GPIO>.
+Slave segment '/axi_gpio_0/S_AXI/Reg' is being assigned into address space '/zynq_ultra_ps_e_0/Data' at <0xA000_0000 [ 64K ]>.
+WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /axi_interconnect_0/s00_couplers/auto_ds/S_AXI(0) and /zynq_ultra_ps_e_0/M_AXI_HPM0_FPD(16)
+WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /axi_interconnect_0/s00_couplers/auto_ds/S_AXI(0) and /zynq_ultra_ps_e_0/M_AXI_HPM0_FPD(16)
+Wrote  : </home/arc/ARC_Development/ARC_CUSTOM_CARRIER/build/vivado/arc_uzev_base/arc_uzev_base.srcs/sources_1/bd/system/system.bd> 
+INFO: [BD 5-148] Tcl file written out </home/arc/ARC_Development/ARC_CUSTOM_CARRIER/evidence/08_FIRST_PS_PL_AXI_GPIO_BD.tcl>.
+
+
+------------------------------------------------------------
+FIRST PS -> PL AXI DESIGN
+------------------------------------------------------------
+M_AXI_GP0=1
+PL0_ENABLE=1
+PL0_REQUESTED_MHZ=100
+
+BLOCKS:
+CELL=/axi_gpio_0
+CELL=/axi_interconnect_0
+CELL=/reset_clock_locked
+CELL=/rst_ps_100m
+CELL=/zynq_ultra_ps_e_0
+
+ADDRESS MAP:
+ADDR_SEG=/zynq_ultra_ps_e_0/Data/SEG_axi_gpio_0_Reg
+  OFFSET=0x00A0000000
+  RANGE=0x0000010000
+
+ARC_AXI_GPIO_BASE_PASS=1
+============================================================
+INFO: [Common 17-206] Exiting Vivado at Thu Sep 17 11:59:29 2026...

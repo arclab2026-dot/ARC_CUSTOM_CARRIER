@@ -1,0 +1,72 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 04:59:54 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Thu Oct  8 10:31:21 2026
+# Process ID: 10373
+# Current directory: /home/arc/ARC_Development/ARC_CUSTOM_CARRIER
+# Command line: vivado -mode batch -source power_budget/scripts/01_baseline_power_50c.tcl -log power_budget/logs/01_baseline_power_50c.log -journal power_budget/logs/01_baseline_power_50c.jou
+# Log file: /home/arc/ARC_Development/ARC_CUSTOM_CARRIER/power_budget/logs/01_baseline_power_50c.log
+# Journal file: /home/arc/ARC_Development/ARC_CUSTOM_CARRIER/power_budget/logs/01_baseline_power_50c.jou
+# Running On: arc-iMac, OS: Linux, CPU Frequency: 3000.000 MHz, CPU Physical cores: 4, Host memory: 8215 MB
+#-----------------------------------------------------------
+source power_budget/scripts/01_baseline_power_50c.tcl
+# puts "========================================"
+========================================
+# puts "ARC POWER BUDGET - BASELINE 50C"
+ARC POWER BUDGET - BASELINE 50C
+# puts "========================================"
+========================================
+# set checkpoint "build/vivado/arc_uzev_base/arc_uzev_base.runs/impl_1/system_wrapper_routed.dcp"
+# set report_dir "power_budget/reports"
+# file mkdir $report_dir
+# puts "===== OPEN ROUTED CHECKPOINT ====="
+===== OPEN ROUTED CHECKPOINT =====
+# open_checkpoint $checkpoint
+Command: open_checkpoint build/vivado/arc_uzev_base/arc_uzev_base.runs/impl_1/system_wrapper_routed.dcp
+
+Starting open_checkpoint Task
+
+Time (s): cpu = 00:00:00.05 ; elapsed = 00:00:00.06 . Memory (MB): peak = 1655.500 ; gain = 5.938 ; free physical = 155 ; free virtual = 11369
+INFO: [Device 21-403] Loading part xczu7ev-fbvb900-1-e
+Netlist sorting complete. Time (s): cpu = 00:00:00.07 ; elapsed = 00:00:00.08 . Memory (MB): peak = 2830.742 ; gain = 0.000 ; free physical = 222 ; free virtual = 10349
+INFO: [Netlist 29-17] Analyzing 9 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2022.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Constraints 18-5170] The checkpoint was created with non-default parameter values which do not match the current Vivado settings.  Mismatching parameters are:
+  general.maxThreads
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF Files: Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 3199.125 ; gain = 18.812 ; free physical = 158 ; free virtual = 10001
+Restored from archive | CPU: 1.080000 secs | Memory: 4.027657 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 3199.125 ; gain = 18.812 ; free physical = 158 ; free virtual = 10001
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3583.555 ; gain = 0.000 ; free physical = 158 ; free virtual = 9612
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 7 instances were transformed.
+  RAM32M16 => RAM32M16 (RAMD32(x14), RAMS32(x2)): 5 instances
+  RAM32X1D => RAM32X1D (RAMD32(x2)): 2 instances
+
+INFO: [Project 1-604] Checkpoint was created with Vivado v2022.2 (64-bit) build 3671981
+OpenCheckpoint Checksum | Checksum: 1286eb42c
+----- Checksum: PlaceDB: 68863f51 ShapeSum: 498c9b44 RouteDB: 765bd997 
+open_checkpoint: Time (s): cpu = 00:00:30 ; elapsed = 00:00:46 . Memory (MB): peak = 3583.555 ; gain = 1936.961 ; free physical = 157 ; free virtual = 9613
+# puts "===== VERIFY FPGA PART ====="
+===== VERIFY FPGA PART =====
+# puts "FPGA_PART=[get_property PART [current_design]]"
+FPGA_PART=xczu7ev-fbvb900-1-e
+# puts "===== SET THERMAL CONDITIONS ====="
+===== SET THERMAL CONDITIONS =====
+# set_operating_conditions \
+#     -ambient_temp 50 \
+#     -airflow 250 \
+#     -heat_sink medium \
+#     -board medium \
+#     -board_layers 12to15
+ERROR: [Common 17-170] Unknown option '-heat_sink', please type 'set_operating_conditions -help' for usage info.
+INFO: [Common 17-206] Exiting Vivado at Thu Oct  8 10:32:56 2026...

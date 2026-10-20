@@ -1,0 +1,19 @@
+!SESSION 2026-10-13 11:37:27.102 -----------------------------------------------
+eclipse.buildId=2022.2
+java.version=11.0.11
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Framework arguments:  -application com.xilinx.sdx.cmdline.service 44151
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -application com.xilinx.sdx.cmdline.service 44151 -data /home/arc/ARC_Development/ARC_CUSTOM_CARRIER/build/vitis_boot_sd1_uart
+
+!ENTRY org.eclipse.osgi 4 0 2026-10-13 11:37:27.504
+!MESSAGE Bundle reference:file:org.apache.log4j_1.2.15.v201012070815.jar not found.
+
+!ENTRY org.eclipse.osgi 4 0 2026-10-13 11:37:27.535
+!MESSAGE Bundle reference:file:org.slf4j.impl.log4j12_1.7.2.v20131105-2200.jar not found.
+
+!ENTRY org.eclipse.cdt.core 1 0 2026-10-13 11:37:45.439
+!MESSAGE Indexed 'arc_uzev_sd1_uart_boot' (945 sources, 1,195 headers) in 14.3 sec: 104,375 declarations; 333,509 references; 502 unresolved inclusions; 153 syntax errors; 4,653 unresolved names (1.1%)
+
+!ENTRY org.eclipse.core.resources 2 10035 2026-10-13 11:38:07.811
+!MESSAGE The workspace will exit with unsaved changes in this session.

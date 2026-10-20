@@ -1,0 +1,1 @@
+b77e1e50e66fa8533a06c33cac719a81d1eef5f8b5d22c4334d12e759d9da5b6  build/boot_components/bl31.elf

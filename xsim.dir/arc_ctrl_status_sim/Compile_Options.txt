@@ -1,0 +1,1 @@
+"tb_arc_ctrl_status" -s "arc_ctrl_status_sim" 

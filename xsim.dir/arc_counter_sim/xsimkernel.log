@@ -1,0 +1,7 @@
+Running: xsim.dir/arc_counter_sim/xsimk -runall -simmode gui -wdb arc_counter_sim.wdb -simrunnum 0 -socket 44161
+Design successfully loaded
+Design Loading Memory Usage: 20468 KB (Peak: 20468 KB)
+Design Loading CPU Usage: 0 ms
+Simulation completed
+Simulation Memory Usage: 94460 KB (Peak: 159736 KB)
+Simulation CPU Usage: 0 ms

@@ -1,0 +1,91 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 04:59:54 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Thu Oct  8 10:35:17 2026
+# Process ID: 10767
+# Current directory: /home/arc/ARC_Development/ARC_CUSTOM_CARRIER
+# Command line: vivado -mode batch -source power_budget/scripts/01_baseline_power_50c.tcl -log power_budget/logs/01_baseline_power_50c.log -journal power_budget/logs/01_baseline_power_50c.jou
+# Log file: /home/arc/ARC_Development/ARC_CUSTOM_CARRIER/power_budget/logs/01_baseline_power_50c.log
+# Journal file: /home/arc/ARC_Development/ARC_CUSTOM_CARRIER/power_budget/logs/01_baseline_power_50c.jou
+# Running On: arc-iMac, OS: Linux, CPU Frequency: 3000.000 MHz, CPU Physical cores: 4, Host memory: 8215 MB
+#-----------------------------------------------------------
+source power_budget/scripts/01_baseline_power_50c.tcl
+# puts "========================================"
+========================================
+# puts "ARC POWER BUDGET - BASELINE 50C"
+ARC POWER BUDGET - BASELINE 50C
+# puts "========================================"
+========================================
+# set checkpoint "build/vivado/arc_uzev_base/arc_uzev_base.runs/impl_1/system_wrapper_routed.dcp"
+# set report_dir "power_budget/reports"
+# file mkdir $report_dir
+# puts "===== OPEN ROUTED CHECKPOINT ====="
+===== OPEN ROUTED CHECKPOINT =====
+# open_checkpoint $checkpoint
+Command: open_checkpoint build/vivado/arc_uzev_base/arc_uzev_base.runs/impl_1/system_wrapper_routed.dcp
+
+Starting open_checkpoint Task
+
+Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.05 . Memory (MB): peak = 1622.648 ; gain = 3.969 ; free physical = 1147 ; free virtual = 11380
+INFO: [Device 21-403] Loading part xczu7ev-fbvb900-1-e
+Netlist sorting complete. Time (s): cpu = 00:00:00.05 ; elapsed = 00:00:00.04 . Memory (MB): peak = 2798.492 ; gain = 0.000 ; free physical = 238 ; free virtual = 10352
+INFO: [Netlist 29-17] Analyzing 9 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2022.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Constraints 18-5170] The checkpoint was created with non-default parameter values which do not match the current Vivado settings.  Mismatching parameters are:
+  general.maxThreads
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF Files: Time (s): cpu = 00:00:00.99 ; elapsed = 00:00:01 . Memory (MB): peak = 3165.914 ; gain = 19.844 ; free physical = 164 ; free virtual = 10021
+Restored from archive | CPU: 1.000000 secs | Memory: 4.027657 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00.99 ; elapsed = 00:00:01 . Memory (MB): peak = 3165.914 ; gain = 19.844 ; free physical = 164 ; free virtual = 10021
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3551.023 ; gain = 0.000 ; free physical = 167 ; free virtual = 9612
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 7 instances were transformed.
+  RAM32M16 => RAM32M16 (RAMD32(x14), RAMS32(x2)): 5 instances
+  RAM32X1D => RAM32X1D (RAMD32(x2)): 2 instances
+
+INFO: [Project 1-604] Checkpoint was created with Vivado v2022.2 (64-bit) build 3671981
+OpenCheckpoint Checksum | Checksum: 1286eb42c
+----- Checksum: PlaceDB: 68863f51 ShapeSum: 498c9b44 RouteDB: 765bd997 
+open_checkpoint: Time (s): cpu = 00:00:28 ; elapsed = 00:00:36 . Memory (MB): peak = 3551.023 ; gain = 1935.312 ; free physical = 159 ; free virtual = 9605
+# puts "===== VERIFY FPGA PART ====="
+===== VERIFY FPGA PART =====
+# puts "FPGA_PART=[get_property PART [current_design]]"
+FPGA_PART=xczu7ev-fbvb900-1-e
+# puts "===== SET THERMAL CONDITIONS ====="
+===== SET THERMAL CONDITIONS =====
+# set_operating_conditions \
+#     -ambient_temp 50 \
+#     -airflow 250 \
+#     -heatsink medium \
+#     -board medium \
+#     -board_layers 12to15
+# puts "===== GENERATE POWER REPORT ====="
+===== GENERATE POWER REPORT =====
+# report_power \
+#     -file "$report_dir/arc_baseline_power_50c.rpt"
+Command: report_power -file power_budget/reports/arc_baseline_power_50c.rpt
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+0 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+report_power completed successfully
+report_power: Time (s): cpu = 00:00:09 ; elapsed = 00:00:08 . Memory (MB): peak = 3733.812 ; gain = 182.789 ; free physical = 162 ; free virtual = 9527
+# puts "===== GENERATE UTILIZATION REPORT ====="
+===== GENERATE UTILIZATION REPORT =====
+# report_utilization \
+#     -file "$report_dir/arc_baseline_utilization.rpt"
+# puts "===== COMPLETE ====="
+===== COMPLETE =====
+# puts "ARC_BASELINE_POWER_50C_COMPLETE=1"
+ARC_BASELINE_POWER_50C_COMPLETE=1
+# close_design
+INFO: [Common 17-206] Exiting Vivado at Thu Oct  8 10:36:20 2026...

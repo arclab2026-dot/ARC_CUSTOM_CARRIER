@@ -1,0 +1,1 @@
+bd48a75bb7d7dcb489be3fc819813e8d4d76725abfe7bad8d7bd40142e48a27f  build/device_tree_sd1_uart/compiled/system.dtb

@@ -1,0 +1,1 @@
+"tb_arc_ps_pl_system" -debug "typical" -s "arc_ps_pl_system_sim" 

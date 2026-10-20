@@ -1,0 +1,4 @@
+PROJECT_PART=xczu7ev-fbvb900-1-e
+WRAPPER=/home/arc/ARC_Development/ARC_CUSTOM_CARRIER/build/vivado/arc_uzev_base/arc_uzev_base.gen/sources_1/bd/system/hdl/system_wrapper.v
+TOP=system_wrapper
+ARC_HDL_WRAPPER_PASS=1

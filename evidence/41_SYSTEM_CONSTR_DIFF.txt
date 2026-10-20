@@ -1,0 +1,58 @@
+--- reference/hardware_history/system_constr_historical.xdc	2026-09-17 11:02:01.500672473 -0400
++++ reference/hardware_handoff_20261009/system_constr.xdc	2026-10-09 16:15:17.901379903 -0400
+@@ -11,28 +11,36 @@
+ # ——————————————————————————————————————————————
+ set_property  -dict {PACKAGE_PIN  D10} [get_ports ref_clk0_p]                                          ; ## D04  GBTCLK0_M2C_P  MGTREFCLK0P_227
+ set_property  -dict {PACKAGE_PIN  D9 } [get_ports ref_clk0_n]                                          ; ## D05  GBTCLK0_M2C_N  MGTREFCLK0N_227
+-set_property  -dict {PACKAGE_PIN  B10} [get_ports ref_clk1_p]                                          ; ## B20  GBTCLK1_M2C_P  MGTREFCLK1P_227
+-set_property  -dict {PACKAGE_PIN  B9 } [get_ports ref_clk1_n]                                          ; ## B21  GBTCLK1_M2C_N  MGTREFCLK1N_227
++set_property  -dict {PACKAGE_PIN  L8 } [get_ports ref_clk1_p]                                          ; ## D41  GBTCLK1_M2C_P  MGTREFCLK0P_225 (DEC-599: moved Quad226->Quad225, outer row D; was F10/MGTREFCLK1P_226). NOTE the nets are NAMED swapped (FMC_GBTCLK1_M2C_N joins D41 and J4.B20) but pin-to-pin it is direct: B20 (VITA P) <-> D41 (P ball)
++set_property  -dict {PACKAGE_PIN  L7 } [get_ports ref_clk1_n]                                          ; ## D42  GBTCLK1_M2C_N  MGTREFCLK0N_225 (DEC-599: moved Quad226->Quad225, outer row D; was F9/MGTREFCLK1N_226)
+ 
+ # ——————————————————————————————————————————————
+-# GT Data Lanes — Quad 227, non-sequential JESD204B mapping (Tab 3: verified)
++# GT Data Lanes — mixed Quad (Tab 3: verified; DP3 RX only remains on Quad
++# 225 (RU Phase 1, 2026-09-24, DEC-479/480). DP1/DP2 RX REVERTED to Quad 227
++# DEC-517, 2026-09-28 -- VT's cross-quad refclk gate (DEC-481) is superseded:
++# returning DP1/DP2 to Quad 227 avoids the inter-quad refclk question
++# entirely for those two lanes. DP3 still borrows Quad 227's MGTREFCLK0/1 via
++# GTNORTHREFCLK/GTSOUTHREFCLK (2 quads away) -- that borrow is now a PRE-FAB
++# confirmation item via reports/VT/, not a routing gate. See
++# reports/KJ_hdl_handoff.md. DP0 RX and all TX (C2M) lanes remain Quad 227,
++# unchanged.)
+ # ——————————————————————————————————————————————
+-set_property  -dict {PACKAGE_PIN  C4 } [get_ports rx_data_p[0]]                                        ; ## A02  DP1_M2C_P  MGTHRXP1_227
+-set_property  -dict {PACKAGE_PIN  C3 } [get_ports rx_data_n[0]]                                        ; ## A03  DP1_M2C_N  MGTHRXN1_227
+-set_property  -dict {PACKAGE_PIN  D2 } [get_ports rx_data_p[1]]                                        ; ## A06  DP2_M2C_P  MGTHRXP0_227
+-set_property  -dict {PACKAGE_PIN  D1 } [get_ports rx_data_n[1]]                                        ; ## A07  DP2_M2C_N  MGTHRXN0_227
+-set_property  -dict {PACKAGE_PIN  B2 } [get_ports rx_data_p[2]]                                        ; ## C06  DP0_M2C_P  MGTHRXP2_227
+-set_property  -dict {PACKAGE_PIN  B1 } [get_ports rx_data_n[2]]                                        ; ## C07  DP0_M2C_N  MGTHRXN2_227
+-set_property  -dict {PACKAGE_PIN  A4 } [get_ports rx_data_p[3]]                                        ; ## A10  DP3_M2C_P  MGTHRXP3_227
+-set_property  -dict {PACKAGE_PIN  A3 } [get_ports rx_data_n[3]]                                        ; ## A11  DP3_M2C_N  MGTHRXN3_227
+-set_property  -dict {PACKAGE_PIN  D6 } [get_ports tx_data_p[0]]                                        ; ## A22  DP1_C2M_P  MGTHTXP0_227
+-set_property  -dict {PACKAGE_PIN  D5 } [get_ports tx_data_n[0]]                                        ; ## A23  DP1_C2M_N  MGTHTXN0_227
+-set_property  -dict {PACKAGE_PIN  C8 } [get_ports tx_data_p[1]]                                        ; ## A26  DP2_C2M_P  MGTHTXP1_227
+-set_property  -dict {PACKAGE_PIN  C7 } [get_ports tx_data_n[1]]                                        ; ## A27  DP2_C2M_N  MGTHTXN1_227
+-set_property  -dict {PACKAGE_PIN  B6 } [get_ports tx_data_p[2]]                                        ; ## C02  DP0_C2M_P  MGTHTXP2_227
+-set_property  -dict {PACKAGE_PIN  B5 } [get_ports tx_data_n[2]]                                        ; ## C03  DP0_C2M_N  MGTHTXN2_227
+-set_property  -dict {PACKAGE_PIN  A8 } [get_ports tx_data_p[3]]                                        ; ## A30  DP3_C2M_P  MGTHTXP3_227
+-set_property  -dict {PACKAGE_PIN  A7 } [get_ports tx_data_n[3]]                                        ; ## A31  DP3_C2M_N  MGTHTXN3_227
++set_property  -dict {PACKAGE_PIN  C4 } [get_ports rx_data_p[0]]                                        ; ## A02  DP1_M2C_P  MGTHRXP1_227 (reverted DEC-517; was N4/MGTHRXP0_225)
++set_property  -dict {PACKAGE_PIN  C3 } [get_ports rx_data_n[0]]                                        ; ## A03  DP1_M2C_N  MGTHRXN1_227 (reverted DEC-517; was N3/MGTHRXN0_225)
++set_property  -dict {PACKAGE_PIN  F2 } [get_ports rx_data_p[1]]                                        ; ## A30  DP2_M2C_P  MGTHRXP2_226 (DEC-569: moved Quad227->Quad226, outer row A; was D2/MGTHRXP0_227)
++set_property  -dict {PACKAGE_PIN  F1 } [get_ports rx_data_n[1]]                                        ; ## A31  DP2_M2C_N  MGTHRXN2_226 (DEC-569: moved Quad227->Quad226, outer row A; was D1/MGTHRXN0_227)
++set_property  -dict {PACKAGE_PIN  H2 } [get_ports rx_data_p[2]]                                        ; ## A27  DP0_M2C_P  MGTHRXP0_226 (DEC-569: moved Quad227->Quad226, outer row A; was B2/MGTHRXP2_227)
++set_property  -dict {PACKAGE_PIN  H1 } [get_ports rx_data_n[2]]                                        ; ## A28  DP0_M2C_N  MGTHRXN0_226 (DEC-569: moved Quad227->Quad226, outer row A; was B1/MGTHRXN2_227)
++set_property  -dict {PACKAGE_PIN  J4 } [get_ports rx_data_p[3]]                                        ; ## A10  DP3_M2C_P  MGTHRXP3_225 (was A4/MGTHRXP3_227)
++set_property  -dict {PACKAGE_PIN  J3 } [get_ports rx_data_n[3]]                                        ; ## A11  DP3_M2C_N  MGTHRXN3_225 (was A3/MGTHRXN3_227)
++set_property  -dict {PACKAGE_PIN  D6 } [get_ports tx_data_p[0]]                                        ; ## C02  DP0_C2M_P  MGTHTXP0_227 (DEC-590: quad-227 TX0/TX2 swap -- this FPGA pin's J2 pad (D21) is now net DP0_C2M_P, reaching J4.C2; was ## A22 DP1_C2M_P)
++set_property  -dict {PACKAGE_PIN  D5 } [get_ports tx_data_n[0]]                                        ; ## C03  DP0_C2M_N  MGTHTXN0_227 (DEC-590: quad-227 TX0/TX2 swap -- this FPGA pin's J2 pad (D20) is now net DP0_C2M_N, reaching J4.C3; was ## A23 DP1_C2M_N)
++set_property  -dict {PACKAGE_PIN  G8 } [get_ports tx_data_p[1]]                                        ; ## D29  DP2_C2M_P  MGTHTXP1_226 (DEC-569: moved Quad227->Quad226, outer row D; was C8/MGTHTXP1_227)
++set_property  -dict {PACKAGE_PIN  G7 } [get_ports tx_data_n[1]]                                        ; ## D30  DP2_C2M_N  MGTHTXN1_226 (DEC-569: moved Quad227->Quad226, outer row D; was C7/MGTHTXN1_227)
++set_property  -dict {PACKAGE_PIN  B6 } [get_ports tx_data_p[2]]                                        ; ## A22  DP1_C2M_P  MGTHTXP2_227 (DEC-590: quad-227 TX0/TX2 swap -- this FPGA pin's J2 pad (D24) is now net DP1_C2M_P, reaching J4.A22; was ## C02 DP0_C2M_P)
++set_property  -dict {PACKAGE_PIN  B5 } [get_ports tx_data_n[2]]                                        ; ## A23  DP1_C2M_N  MGTHTXN2_227 (DEC-590: quad-227 TX0/TX2 swap -- this FPGA pin's J2 pad (D23) is now net DP1_C2M_N, reaching J4.A23; was ## C03 DP0_C2M_N)
++set_property  -dict {PACKAGE_PIN  E8 } [get_ports tx_data_p[3]]                                        ; ## D32  DP3_C2M_P  MGTHTXP3_226 (DEC-569: moved Quad227->Quad226, outer row D; was A8/MGTHTXP3_227)
++set_property  -dict {PACKAGE_PIN  E7 } [get_ports tx_data_n[3]]                                        ; ## D33  DP3_C2M_N  MGTHTXN3_226 (DEC-569: moved Quad227->Quad226, outer row D; was A7/MGTHTXN3_227)
+ 
+ # ——————————————————————————————————————————————
+ # JESD204B SYNC and SYSREF — Bank 65 LVDS differential

@@ -1,0 +1,6 @@
+PROJECT_PART=xczu7ev-fbvb900-1-e
+BD_NAME=system
+PS_CELL=/zynq_ultra_ps_e_0
+PS_VLNV=xilinx.com:ip:zynq_ultra_ps_e:3.4
+INTF=/zynq_ultra_ps_e_0/M_AXI_HPM0_LPD
+ARC_BASE_PROJECT_CREATE_PASS=1

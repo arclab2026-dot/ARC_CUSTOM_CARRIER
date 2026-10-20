@@ -1,0 +1,802 @@
+
+****** Vivado v2022.2 (64-bit)
+  **** SW Build 3671981 on Fri Oct 14 04:59:54 MDT 2022
+  **** IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+source tcl/02_inspect_pin_resources.tcl -notrace
+============================================================
+ARC CUSTOM CARRIER - PACKAGE RESOURCE INSPECTION
+============================================================
+create_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:10 . Memory (MB): peak = 1725.652 ; gain = 86.992 ; free physical = 180 ; free virtual = 1766
+INFO: [Device 21-403] Loading part xczu7ev-fbvb900-1-e
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2820.340 ; gain = 0.000 ; free physical = 202 ; free virtual = 832
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2820.340 ; gain = 0.000 ; free physical = 184 ; free virtual = 752
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_io_design: Time (s): cpu = 00:00:08 ; elapsed = 00:00:18 . Memory (MB): peak = 2820.340 ; gain = 1093.688 ; free physical = 183 ; free virtual = 751
+
+============================================================
+PACKAGE_PIN=D10
+============================================================
+Property                Type    Read-only  Value
+BANK                    string  true       227
+BUFIO_2_REGION          string  true       TR
+CLASS                   string  true       package_pin
+DIFF_PAIR_PIN           string  true       D9
+IS_BONDED               bool    true       1
+IS_DIFFERENTIAL         bool    true       1
+IS_GENERAL_PURPOSE      bool    true       0
+IS_GLOBAL_CLK           bool    true       0
+IS_LOW_CAP              bool    true       0
+IS_MASTER               bool    true       1
+IS_USED                 bool    true       0
+IS_VREF                 bool    true       0
+IS_VRN                  bool    true       0
+IS_VRP                  bool    true       0
+MAX_DELAY               int     true       99553
+MIN_DELAY               int     true       98562
+NAME                    string  true       D10
+PIN_FUNC                enum    true       MGTREFCLK0P_227
+PIN_FUNC_COUNT          int     true       1
+PKGPIN_BYTEGROUP_INDEX  int     true       0
+PKGPIN_NIBBLE_INDEX     int     true       0
+
+============================================================
+PACKAGE_PIN=D9
+============================================================
+Property                Type    Read-only  Value
+BANK                    string  true       227
+BUFIO_2_REGION          string  true       TR
+CLASS                   string  true       package_pin
+DIFF_PAIR_PIN           string  true       D10
+IS_BONDED               bool    true       1
+IS_DIFFERENTIAL         bool    true       1
+IS_GENERAL_PURPOSE      bool    true       0
+IS_GLOBAL_CLK           bool    true       0
+IS_LOW_CAP              bool    true       0
+IS_MASTER               bool    true       0
+IS_USED                 bool    true       0
+IS_VREF                 bool    true       0
+IS_VRN                  bool    true       0
+IS_VRP                  bool    true       0
+MAX_DELAY               int     true       99556
+MIN_DELAY               int     true       98566
+NAME                    string  true       D9
+PIN_FUNC                enum    true       MGTREFCLK0N_227
+PIN_FUNC_COUNT          int     true       1
+PKGPIN_BYTEGROUP_INDEX  int     true       0
+PKGPIN_NIBBLE_INDEX     int     true       0
+
+============================================================
+PACKAGE_PIN=B10
+============================================================
+Property                Type    Read-only  Value
+BANK                    string  true       227
+BUFIO_2_REGION          string  true       TR
+CLASS                   string  true       package_pin
+DIFF_PAIR_PIN           string  true       B9
+IS_BONDED               bool    true       1
+IS_DIFFERENTIAL         bool    true       1
+IS_GENERAL_PURPOSE      bool    true       0
+IS_GLOBAL_CLK           bool    true       0
+IS_LOW_CAP              bool    true       0
+IS_MASTER               bool    true       1
+IS_USED                 bool    true       0
+IS_VREF                 bool    true       0
+IS_VRN                  bool    true       0
+IS_VRP                  bool    true       0
+MAX_DELAY               int     true       108439
+MIN_DELAY               int     true       107360
+NAME                    string  true       B10
+PIN_FUNC                enum    true       MGTREFCLK1P_227
+PIN_FUNC_COUNT          int     true       1
+PKGPIN_BYTEGROUP_INDEX  int     true       0
+PKGPIN_NIBBLE_INDEX     int     true       0
+
+============================================================
+PACKAGE_PIN=B9
+============================================================
+Property                Type    Read-only  Value
+BANK                    string  true       227
+BUFIO_2_REGION          string  true       TR
+CLASS                   string  true       package_pin
+DIFF_PAIR_PIN           string  true       B10
+IS_BONDED               bool    true       1
+IS_DIFFERENTIAL         bool    true       1
+IS_GENERAL_PURPOSE      bool    true       0
+IS_GLOBAL_CLK           bool    true       0
+IS_LOW_CAP              bool    true       0
+IS_MASTER               bool    true       0
+IS_USED                 bool    true       0
+IS_VREF                 bool    true       0
+IS_VRN                  bool    true       0
+IS_VRP                  bool    true       0
+MAX_DELAY               int     true       109071
+MIN_DELAY               int     true       107985
+NAME                    string  true       B9
+PIN_FUNC                enum    true       MGTREFCLK1N_227
+PIN_FUNC_COUNT          int     true       1
+PKGPIN_BYTEGROUP_INDEX  int     true       0
+PKGPIN_NIBBLE_INDEX     int     true       0
+
+============================================================
+PACKAGE_PIN=C4
+============================================================
+Property                Type    Read-only  Value
+BANK                    string  true       227
+BUFIO_2_REGION          string  true       TR
+CLASS                   string  true       package_pin
+DIFF_PAIR_PIN           string  true       C3
+IS_BONDED               bool    true       1
+IS_DIFFERENTIAL         bool    true       1
+IS_GENERAL_PURPOSE      bool    true       0
+IS_GLOBAL_CLK           bool    true       0
+IS_LOW_CAP              bool    true       0
+IS_MASTER               bool    true       1
+IS_USED                 bool    true       0
+IS_VREF                 bool    true       0
+IS_VRN                  bool    true       0
+IS_VRP                  bool    true       0
+MAX_DELAY               int     true       106717
+MIN_DELAY               int     true       105655
+NAME                    string  true       C4
+PIN_FUNC                enum    true       MGTHRXP1_227
+PIN_FUNC_COUNT          int     true       1
+PKGPIN_BYTEGROUP_INDEX  int     true       0
+PKGPIN_NIBBLE_INDEX     int     true       0
+
+============================================================
+PACKAGE_PIN=C3
+============================================================
+Property                Type    Read-only  Value
+BANK                    string  true       227
+BUFIO_2_REGION          string  true       TR
+CLASS                   string  true       package_pin
+DIFF_PAIR_PIN           string  true       C4
+IS_BONDED               bool    true       1
+IS_DIFFERENTIAL         bool    true       1
+IS_GENERAL_PURPOSE      bool    true       0
+IS_GLOBAL_CLK           bool    true       0
+IS_LOW_CAP              bool    true       0
+IS_MASTER               bool    true       0
+IS_USED                 bool    true       0
+IS_VREF                 bool    true       0
+IS_VRN                  bool    true       0
+IS_VRP                  bool    true       0
+MAX_DELAY               int     true       106626
+MIN_DELAY               int     true       105565
+NAME                    string  true       C3
+PIN_FUNC                enum    true       MGTHRXN1_227
+PIN_FUNC_COUNT          int     true       1
+PKGPIN_BYTEGROUP_INDEX  int     true       0
+PKGPIN_NIBBLE_INDEX     int     true       0
+
+============================================================
+PACKAGE_PIN=D2
+============================================================
+Property                Type    Read-only  Value
+BANK                    string  true       227
+BUFIO_2_REGION          string  true       TR
+CLASS                   string  true       package_pin
+DIFF_PAIR_PIN           string  true       D1
+IS_BONDED               bool    true       1
+IS_DIFFERENTIAL         bool    true       1
+IS_GENERAL_PURPOSE      bool    true       0
+IS_GLOBAL_CLK           bool    true       0
+IS_LOW_CAP              bool    true       0
+IS_MASTER               bool    true       1
+IS_USED                 bool    true       0
+IS_VREF                 bool    true       0
+IS_VRN                  bool    true       0
+IS_VRP                  bool    true       0
+MAX_DELAY               int     true       119750
+MIN_DELAY               int     true       118559
+NAME                    string  true       D2
+PIN_FUNC                enum    true       MGTHRXP0_227
+PIN_FUNC_COUNT          int     true       1
+PKGPIN_BYTEGROUP_INDEX  int     true       0
+PKGPIN_NIBBLE_INDEX     int     true       0
+
+============================================================
+PACKAGE_PIN=D1
+============================================================
+Property                Type    Read-only  Value
+BANK                    string  true       227
+BUFIO_2_REGION          string  true       TR
+CLASS                   string  true       package_pin
+DIFF_PAIR_PIN           string  true       D2
+IS_BONDED               bool    true       1
+IS_DIFFERENTIAL         bool    true       1
+IS_GENERAL_PURPOSE      bool    true       0
+IS_GLOBAL_CLK           bool    true       0
+IS_LOW_CAP              bool    true       0
+IS_MASTER               bool    true       0
+IS_USED                 bool    true       0
+IS_VREF                 bool    true       0
+IS_VRN                  bool    true       0
+IS_VRP                  bool    true       0
+MAX_DELAY               int     true       119644
+MIN_DELAY               int     true       118453
+NAME                    string  true       D1
+PIN_FUNC                enum    true       MGTHRXN0_227
+PIN_FUNC_COUNT          int     true       1
+PKGPIN_BYTEGROUP_INDEX  int     true       0
+PKGPIN_NIBBLE_INDEX     int     true       0
+
+============================================================
+PACKAGE_PIN=B2
+============================================================
+Property                Type    Read-only  Value
+BANK                    string  true       227
+BUFIO_2_REGION          string  true       TR
+CLASS                   string  true       package_pin
+DIFF_PAIR_PIN           string  true       B1
+IS_BONDED               bool    true       1
+IS_DIFFERENTIAL         bool    true       1
+IS_GENERAL_PURPOSE      bool    true       0
+IS_GLOBAL_CLK           bool    true       0
+IS_LOW_CAP              bool    true       0
+IS_MASTER               bool    true       1
+IS_USED                 bool    true       0
+IS_VREF                 bool    true       0
+IS_VRN                  bool    true       0
+IS_VRP                  bool    true       0
+MAX_DELAY               int     true       124749
+MIN_DELAY               int     true       123508
+NAME                    string  true       B2
+PIN_FUNC                enum    true       MGTHRXP2_227
+PIN_FUNC_COUNT          int     true       1
+PKGPIN_BYTEGROUP_INDEX  int     true       0
+PKGPIN_NIBBLE_INDEX     int     true       0
+
+============================================================
+PACKAGE_PIN=B1
+============================================================
+Property                Type    Read-only  Value
+BANK                    string  true       227
+BUFIO_2_REGION          string  true       TR
+CLASS                   string  true       package_pin
+DIFF_PAIR_PIN           string  true       B2
+IS_BONDED               bool    true       1
+IS_DIFFERENTIAL         bool    true       1
+IS_GENERAL_PURPOSE      bool    true       0
+IS_GLOBAL_CLK           bool    true       0
+IS_LOW_CAP              bool    true       0
+IS_MASTER               bool    true       0
+IS_USED                 bool    true       0
+IS_VREF                 bool    true       0
+IS_VRN                  bool    true       0
+IS_VRP                  bool    true       0
+MAX_DELAY               int     true       124614
+MIN_DELAY               int     true       123374
+NAME                    string  true       B1
+PIN_FUNC                enum    true       MGTHRXN2_227
+PIN_FUNC_COUNT          int     true       1
+PKGPIN_BYTEGROUP_INDEX  int     true       0
+PKGPIN_NIBBLE_INDEX     int     true       0
+
+============================================================
+PACKAGE_PIN=A4
+============================================================
+Property                Type    Read-only  Value
+BANK                    string  true       227
+BUFIO_2_REGION          string  true       TR
+CLASS                   string  true       package_pin
+DIFF_PAIR_PIN           string  true       A3
+IS_BONDED               bool    true       1
+IS_DIFFERENTIAL         bool    true       1
+IS_GENERAL_PURPOSE      bool    true       0
+IS_GLOBAL_CLK           bool    true       0
+IS_LOW_CAP              bool    true       0
+IS_MASTER               bool    true       1
+IS_USED                 bool    true       0
+IS_VREF                 bool    true       0
+IS_VRN                  bool    true       0
+IS_VRP                  bool    true       0
+MAX_DELAY               int     true       114329
+MIN_DELAY               int     true       113191
+NAME                    string  true       A4
+PIN_FUNC                enum    true       MGTHRXP3_227
+PIN_FUNC_COUNT          int     true       1
+PKGPIN_BYTEGROUP_INDEX  int     true       0
+PKGPIN_NIBBLE_INDEX     int     true       0
+
+============================================================
+PACKAGE_PIN=A3
+============================================================
+Property                Type    Read-only  Value
+BANK                    string  true       227
+BUFIO_2_REGION          string  true       TR
+CLASS                   string  true       package_pin
+DIFF_PAIR_PIN           string  true       A4
+IS_BONDED               bool    true       1
+IS_DIFFERENTIAL         bool    true       1
+IS_GENERAL_PURPOSE      bool    true       0
+IS_GLOBAL_CLK           bool    true       0
+IS_LOW_CAP              bool    true       0
+IS_MASTER               bool    true       0
+IS_USED                 bool    true       0
+IS_VREF                 bool    true       0
+IS_VRN                  bool    true       0
+IS_VRP                  bool    true       0
+MAX_DELAY               int     true       114474
+MIN_DELAY               int     true       113335
+NAME                    string  true       A3
+PIN_FUNC                enum    true       MGTHRXN3_227
+PIN_FUNC_COUNT          int     true       1
+PKGPIN_BYTEGROUP_INDEX  int     true       0
+PKGPIN_NIBBLE_INDEX     int     true       0
+
+============================================================
+PACKAGE_PIN=D6
+============================================================
+Property                Type    Read-only  Value
+BANK                    string  true       227
+BUFIO_2_REGION          string  true       TR
+CLASS                   string  true       package_pin
+DIFF_PAIR_PIN           string  true       D5
+IS_BONDED               bool    true       1
+IS_DIFFERENTIAL         bool    true       1
+IS_GENERAL_PURPOSE      bool    true       0
+IS_GLOBAL_CLK           bool    true       0
+IS_LOW_CAP              bool    true       0
+IS_MASTER               bool    true       1
+IS_USED                 bool    true       0
+IS_VREF                 bool    true       0
+IS_VRN                  bool    true       0
+IS_VRP                  bool    true       0
+MAX_DELAY               int     true       117444
+MIN_DELAY               int     true       116275
+NAME                    string  true       D6
+PIN_FUNC                enum    true       MGTHTXP0_227
+PIN_FUNC_COUNT          int     true       1
+PKGPIN_BYTEGROUP_INDEX  int     true       0
+PKGPIN_NIBBLE_INDEX     int     true       0
+
+============================================================
+PACKAGE_PIN=D5
+============================================================
+Property                Type    Read-only  Value
+BANK                    string  true       227
+BUFIO_2_REGION          string  true       TR
+CLASS                   string  true       package_pin
+DIFF_PAIR_PIN           string  true       D6
+IS_BONDED               bool    true       1
+IS_DIFFERENTIAL         bool    true       1
+IS_GENERAL_PURPOSE      bool    true       0
+IS_GLOBAL_CLK           bool    true       0
+IS_LOW_CAP              bool    true       0
+IS_MASTER               bool    true       0
+IS_USED                 bool    true       0
+IS_VREF                 bool    true       0
+IS_VRN                  bool    true       0
+IS_VRP                  bool    true       0
+MAX_DELAY               int     true       117318
+MIN_DELAY               int     true       116151
+NAME                    string  true       D5
+PIN_FUNC                enum    true       MGTHTXN0_227
+PIN_FUNC_COUNT          int     true       1
+PKGPIN_BYTEGROUP_INDEX  int     true       0
+PKGPIN_NIBBLE_INDEX     int     true       0
+
+============================================================
+PACKAGE_PIN=C8
+============================================================
+Property                Type    Read-only  Value
+BANK                    string  true       227
+BUFIO_2_REGION          string  true       TR
+CLASS                   string  true       package_pin
+DIFF_PAIR_PIN           string  true       C7
+IS_BONDED               bool    true       1
+IS_DIFFERENTIAL         bool    true       1
+IS_GENERAL_PURPOSE      bool    true       0
+IS_GLOBAL_CLK           bool    true       0
+IS_LOW_CAP              bool    true       0
+IS_MASTER               bool    true       1
+IS_USED                 bool    true       0
+IS_VREF                 bool    true       0
+IS_VRN                  bool    true       0
+IS_VRP                  bool    true       0
+MAX_DELAY               int     true       103621
+MIN_DELAY               int     true       102590
+NAME                    string  true       C8
+PIN_FUNC                enum    true       MGTHTXP1_227
+PIN_FUNC_COUNT          int     true       1
+PKGPIN_BYTEGROUP_INDEX  int     true       0
+PKGPIN_NIBBLE_INDEX     int     true       0
+
+============================================================
+PACKAGE_PIN=C7
+============================================================
+Property                Type    Read-only  Value
+BANK                    string  true       227
+BUFIO_2_REGION          string  true       TR
+CLASS                   string  true       package_pin
+DIFF_PAIR_PIN           string  true       C8
+IS_BONDED               bool    true       1
+IS_DIFFERENTIAL         bool    true       1
+IS_GENERAL_PURPOSE      bool    true       0
+IS_GLOBAL_CLK           bool    true       0
+IS_LOW_CAP              bool    true       0
+IS_MASTER               bool    true       0
+IS_USED                 bool    true       0
+IS_VREF                 bool    true       0
+IS_VRN                  bool    true       0
+IS_VRP                  bool    true       0
+MAX_DELAY               int     true       103451
+MIN_DELAY               int     true       102421
+NAME                    string  true       C7
+PIN_FUNC                enum    true       MGTHTXN1_227
+PIN_FUNC_COUNT          int     true       1
+PKGPIN_BYTEGROUP_INDEX  int     true       0
+PKGPIN_NIBBLE_INDEX     int     true       0
+
+============================================================
+PACKAGE_PIN=B6
+============================================================
+Property                Type    Read-only  Value
+BANK                    string  true       227
+BUFIO_2_REGION          string  true       TR
+CLASS                   string  true       package_pin
+DIFF_PAIR_PIN           string  true       B5
+IS_BONDED               bool    true       1
+IS_DIFFERENTIAL         bool    true       1
+IS_GENERAL_PURPOSE      bool    true       0
+IS_GLOBAL_CLK           bool    true       0
+IS_LOW_CAP              bool    true       0
+IS_MASTER               bool    true       1
+IS_USED                 bool    true       0
+IS_VREF                 bool    true       0
+IS_VRN                  bool    true       0
+IS_VRP                  bool    true       0
+MAX_DELAY               int     true       122328
+MIN_DELAY               int     true       121111
+NAME                    string  true       B6
+PIN_FUNC                enum    true       MGTHTXP2_227
+PIN_FUNC_COUNT          int     true       1
+PKGPIN_BYTEGROUP_INDEX  int     true       0
+PKGPIN_NIBBLE_INDEX     int     true       0
+
+============================================================
+PACKAGE_PIN=B5
+============================================================
+Property                Type    Read-only  Value
+BANK                    string  true       227
+BUFIO_2_REGION          string  true       TR
+CLASS                   string  true       package_pin
+DIFF_PAIR_PIN           string  true       B6
+IS_BONDED               bool    true       1
+IS_DIFFERENTIAL         bool    true       1
+IS_GENERAL_PURPOSE      bool    true       0
+IS_GLOBAL_CLK           bool    true       0
+IS_LOW_CAP              bool    true       0
+IS_MASTER               bool    true       0
+IS_USED                 bool    true       0
+IS_VREF                 bool    true       0
+IS_VRN                  bool    true       0
+IS_VRP                  bool    true       0
+MAX_DELAY               int     true       122205
+MIN_DELAY               int     true       120989
+NAME                    string  true       B5
+PIN_FUNC                enum    true       MGTHTXN2_227
+PIN_FUNC_COUNT          int     true       1
+PKGPIN_BYTEGROUP_INDEX  int     true       0
+PKGPIN_NIBBLE_INDEX     int     true       0
+
+============================================================
+PACKAGE_PIN=A8
+============================================================
+Property                Type    Read-only  Value
+BANK                    string  true       227
+BUFIO_2_REGION          string  true       TR
+CLASS                   string  true       package_pin
+DIFF_PAIR_PIN           string  true       A7
+IS_BONDED               bool    true       1
+IS_DIFFERENTIAL         bool    true       1
+IS_GENERAL_PURPOSE      bool    true       0
+IS_GLOBAL_CLK           bool    true       0
+IS_LOW_CAP              bool    true       0
+IS_MASTER               bool    true       1
+IS_USED                 bool    true       0
+IS_VREF                 bool    true       0
+IS_VRN                  bool    true       0
+IS_VRP                  bool    true       0
+MAX_DELAY               int     true       105703
+MIN_DELAY               int     true       104651
+NAME                    string  true       A8
+PIN_FUNC                enum    true       MGTHTXP3_227
+PIN_FUNC_COUNT          int     true       1
+PKGPIN_BYTEGROUP_INDEX  int     true       0
+PKGPIN_NIBBLE_INDEX     int     true       0
+
+============================================================
+PACKAGE_PIN=A7
+============================================================
+Property                Type    Read-only  Value
+BANK                    string  true       227
+BUFIO_2_REGION          string  true       TR
+CLASS                   string  true       package_pin
+DIFF_PAIR_PIN           string  true       A8
+IS_BONDED               bool    true       1
+IS_DIFFERENTIAL         bool    true       1
+IS_GENERAL_PURPOSE      bool    true       0
+IS_GLOBAL_CLK           bool    true       0
+IS_LOW_CAP              bool    true       0
+IS_MASTER               bool    true       0
+IS_USED                 bool    true       0
+IS_VREF                 bool    true       0
+IS_VRN                  bool    true       0
+IS_VRP                  bool    true       0
+MAX_DELAY               int     true       105546
+MIN_DELAY               int     true       104496
+NAME                    string  true       A7
+PIN_FUNC                enum    true       MGTHTXN3_227
+PIN_FUNC_COUNT          int     true       1
+PKGPIN_BYTEGROUP_INDEX  int     true       0
+PKGPIN_NIBBLE_INDEX     int     true       0
+
+============================================================
+PACKAGE_PIN=AH6
+============================================================
+Property                Type    Read-only  Value
+BANK                    string  true       65
+BUFIO_2_REGION          string  true       BR
+CLASS                   string  true       package_pin
+DIFF_PAIR_PIN           string  true       AJ6
+IS_BONDED               bool    true       1
+IS_DIFFERENTIAL         bool    true       1
+IS_GENERAL_PURPOSE      bool    true       1
+IS_GLOBAL_CLK           bool    true       1
+IS_LOW_CAP              bool    true       0
+IS_MASTER               bool    true       1
+IS_USED                 bool    true       0
+IS_VREF                 bool    true       0
+IS_VRN                  bool    true       0
+IS_VRP                  bool    true       0
+MAX_DELAY               int     true       163759
+MIN_DELAY               int     true       162129
+NAME                    string  true       AH6
+PIN_FUNC                enum    true       IO_L13P_T2L_N0_GC_QBC_65
+PIN_FUNC_COUNT          int     true       3
+PKGPIN_BYTEGROUP_INDEX  int     true       0
+PKGPIN_NIBBLE_INDEX     int     true       0
+
+============================================================
+PACKAGE_PIN=AJ6
+============================================================
+Property                Type    Read-only  Value
+BANK                    string  true       65
+BUFIO_2_REGION          string  true       BR
+CLASS                   string  true       package_pin
+DIFF_PAIR_PIN           string  true       AH6
+IS_BONDED               bool    true       1
+IS_DIFFERENTIAL         bool    true       1
+IS_GENERAL_PURPOSE      bool    true       1
+IS_GLOBAL_CLK           bool    true       1
+IS_LOW_CAP              bool    true       0
+IS_MASTER               bool    true       0
+IS_USED                 bool    true       0
+IS_VREF                 bool    true       0
+IS_VRN                  bool    true       0
+IS_VRP                  bool    true       0
+MAX_DELAY               int     true       163742
+MIN_DELAY               int     true       162113
+NAME                    string  true       AJ6
+PIN_FUNC                enum    true       IO_L13N_T2L_N1_GC_QBC_65
+PIN_FUNC_COUNT          int     true       3
+PKGPIN_BYTEGROUP_INDEX  int     true       1
+PKGPIN_NIBBLE_INDEX     int     true       1
+
+============================================================
+PACKAGE_PIN=AF6
+============================================================
+Property                Type    Read-only  Value
+BANK                    string  true       65
+BUFIO_2_REGION          string  true       BR
+CLASS                   string  true       package_pin
+DIFF_PAIR_PIN           string  true       AF5
+IS_BONDED               bool    true       1
+IS_DIFFERENTIAL         bool    true       1
+IS_GENERAL_PURPOSE      bool    true       1
+IS_GLOBAL_CLK           bool    true       0
+IS_LOW_CAP              bool    true       0
+IS_MASTER               bool    true       1
+IS_USED                 bool    true       0
+IS_VREF                 bool    true       0
+IS_VRN                  bool    true       0
+IS_VRP                  bool    true       0
+MAX_DELAY               int     true       165373
+MIN_DELAY               int     true       163728
+NAME                    string  true       AF6
+PIN_FUNC                enum    true       IO_L18P_T2U_N10_AD2P_65
+PIN_FUNC_COUNT          int     true       2
+PKGPIN_BYTEGROUP_INDEX  int     true       10
+PKGPIN_NIBBLE_INDEX     int     true       4
+
+============================================================
+PACKAGE_PIN=AF5
+============================================================
+Property                Type    Read-only  Value
+BANK                    string  true       65
+BUFIO_2_REGION          string  true       BR
+CLASS                   string  true       package_pin
+DIFF_PAIR_PIN           string  true       AF6
+IS_BONDED               bool    true       1
+IS_DIFFERENTIAL         bool    true       1
+IS_GENERAL_PURPOSE      bool    true       1
+IS_GLOBAL_CLK           bool    true       0
+IS_LOW_CAP              bool    true       0
+IS_MASTER               bool    true       0
+IS_USED                 bool    true       0
+IS_VREF                 bool    true       0
+IS_VRN                  bool    true       0
+IS_VRP                  bool    true       0
+MAX_DELAY               int     true       165267
+MIN_DELAY               int     true       163623
+NAME                    string  true       AF5
+PIN_FUNC                enum    true       IO_L18N_T2U_N11_AD2N_65
+PIN_FUNC_COUNT          int     true       2
+PKGPIN_BYTEGROUP_INDEX  int     true       11
+PKGPIN_NIBBLE_INDEX     int     true       5
+
+============================================================
+PACKAGE_PIN=AG1
+============================================================
+Property                Type    Read-only  Value
+BANK                    string  true       65
+BUFIO_2_REGION          string  true       BR
+CLASS                   string  true       package_pin
+DIFF_PAIR_PIN           string  true       AH1
+IS_BONDED               bool    true       1
+IS_DIFFERENTIAL         bool    true       1
+IS_GENERAL_PURPOSE      bool    true       1
+IS_GLOBAL_CLK           bool    true       0
+IS_LOW_CAP              bool    true       0
+IS_MASTER               bool    true       1
+IS_USED                 bool    true       0
+IS_VREF                 bool    true       0
+IS_VRN                  bool    true       0
+IS_VRP                  bool    true       0
+MAX_DELAY               int     true       189738
+MIN_DELAY               int     true       187850
+NAME                    string  true       AG1
+PIN_FUNC                enum    true       IO_L23P_T3U_N8_I2C_SCLK_65
+PIN_FUNC_COUNT          int     true       2
+PKGPIN_BYTEGROUP_INDEX  int     true       8
+PKGPIN_NIBBLE_INDEX     int     true       2
+
+============================================================
+PACKAGE_PIN=AH1
+============================================================
+Property                Type    Read-only  Value
+BANK                    string  true       65
+BUFIO_2_REGION          string  true       BR
+CLASS                   string  true       package_pin
+DIFF_PAIR_PIN           string  true       AG1
+IS_BONDED               bool    true       1
+IS_DIFFERENTIAL         bool    true       1
+IS_GENERAL_PURPOSE      bool    true       1
+IS_GLOBAL_CLK           bool    true       0
+IS_LOW_CAP              bool    true       0
+IS_MASTER               bool    true       0
+IS_USED                 bool    true       0
+IS_VREF                 bool    true       0
+IS_VRN                  bool    true       0
+IS_VRP                  bool    true       0
+MAX_DELAY               int     true       192862
+MIN_DELAY               int     true       190943
+NAME                    string  true       AH1
+PIN_FUNC                enum    true       IO_L23N_T3U_N9_65
+PIN_FUNC_COUNT          int     true       1
+PKGPIN_BYTEGROUP_INDEX  int     true       9
+PKGPIN_NIBBLE_INDEX     int     true       3
+
+============================================================
+PACKAGE_PIN=AH7
+============================================================
+Property                Type    Read-only  Value
+BANK                    string  true       65
+BUFIO_2_REGION          string  true       BR
+CLASS                   string  true       package_pin
+DIFF_PAIR_PIN           string  true       AJ7
+IS_BONDED               bool    true       1
+IS_DIFFERENTIAL         bool    true       1
+IS_GENERAL_PURPOSE      bool    true       1
+IS_GLOBAL_CLK           bool    true       1
+IS_LOW_CAP              bool    true       0
+IS_MASTER               bool    true       1
+IS_USED                 bool    true       0
+IS_VREF                 bool    true       0
+IS_VRN                  bool    true       0
+IS_VRP                  bool    true       0
+MAX_DELAY               int     true       165844
+MIN_DELAY               int     true       164193
+NAME                    string  true       AH7
+PIN_FUNC                enum    true       IO_L12P_T1U_N10_GC_65
+PIN_FUNC_COUNT          int     true       2
+PKGPIN_BYTEGROUP_INDEX  int     true       10
+PKGPIN_NIBBLE_INDEX     int     true       4
+
+============================================================
+PACKAGE_PIN=AJ7
+============================================================
+Property                Type    Read-only  Value
+BANK                    string  true       65
+BUFIO_2_REGION          string  true       BR
+CLASS                   string  true       package_pin
+DIFF_PAIR_PIN           string  true       AH7
+IS_BONDED               bool    true       1
+IS_DIFFERENTIAL         bool    true       1
+IS_GENERAL_PURPOSE      bool    true       1
+IS_GLOBAL_CLK           bool    true       1
+IS_LOW_CAP              bool    true       0
+IS_MASTER               bool    true       0
+IS_USED                 bool    true       0
+IS_VREF                 bool    true       0
+IS_VRN                  bool    true       0
+IS_VRP                  bool    true       0
+MAX_DELAY               int     true       166270
+MIN_DELAY               int     true       164616
+NAME                    string  true       AJ7
+PIN_FUNC                enum    true       IO_L12N_T1U_N11_GC_65
+PIN_FUNC_COUNT          int     true       2
+PKGPIN_BYTEGROUP_INDEX  int     true       11
+PKGPIN_NIBBLE_INDEX     int     true       5
+
+============================================================
+PACKAGE_PIN=AF3
+============================================================
+Property                Type    Read-only  Value
+BANK                    string  true       65
+BUFIO_2_REGION          string  true       BR
+CLASS                   string  true       package_pin
+DIFF_PAIR_PIN           string  true       AF2
+IS_BONDED               bool    true       1
+IS_DIFFERENTIAL         bool    true       1
+IS_GENERAL_PURPOSE      bool    true       1
+IS_GLOBAL_CLK           bool    true       0
+IS_LOW_CAP              bool    true       0
+IS_MASTER               bool    true       1
+IS_USED                 bool    true       0
+IS_VREF                 bool    true       0
+IS_VRN                  bool    true       0
+IS_VRP                  bool    true       0
+MAX_DELAY               int     true       187133
+MIN_DELAY               int     true       185271
+NAME                    string  true       AF3
+PIN_FUNC                enum    true       IO_L24P_T3U_N10_PERSTN1_I2C_SDA_65
+PIN_FUNC_COUNT          int     true       3
+PKGPIN_BYTEGROUP_INDEX  int     true       10
+PKGPIN_NIBBLE_INDEX     int     true       4
+
+============================================================
+PACKAGE_PIN=AF2
+============================================================
+Property                Type    Read-only  Value
+BANK                    string  true       65
+BUFIO_2_REGION          string  true       BR
+CLASS                   string  true       package_pin
+DIFF_PAIR_PIN           string  true       AF3
+IS_BONDED               bool    true       1
+IS_DIFFERENTIAL         bool    true       1
+IS_GENERAL_PURPOSE      bool    true       1
+IS_GLOBAL_CLK           bool    true       0
+IS_LOW_CAP              bool    true       0
+IS_MASTER               bool    true       0
+IS_USED                 bool    true       0
+IS_VREF                 bool    true       0
+IS_VRN                  bool    true       0
+IS_VRP                  bool    true       0
+MAX_DELAY               int     true       190164
+MIN_DELAY               int     true       188272
+NAME                    string  true       AF2
+PIN_FUNC                enum    true       IO_L24N_T3U_N11_PERSTN0_65
+PIN_FUNC_COUNT          int     true       2
+PKGPIN_BYTEGROUP_INDEX  int     true       11
+PKGPIN_NIBBLE_INDEX     int     true       5
+
+ARC_PIN_RESOURCE_INSPECTION_PASS=1
+INFO: [Common 17-206] Exiting Vivado at Thu Sep 17 11:13:31 2026...

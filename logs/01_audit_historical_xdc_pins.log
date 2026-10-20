@@ -1,0 +1,84 @@
+
+****** Vivado v2022.2 (64-bit)
+  **** SW Build 3671981 on Fri Oct 14 04:59:54 MDT 2022
+  **** IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+source tcl/01_audit_historical_xdc_pins.tcl -notrace
+============================================================
+ARC CUSTOM CARRIER - HISTORICAL XDC PACKAGE PIN AUDIT
+============================================================
+create_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:11 . Memory (MB): peak = 1733.625 ; gain = 86.992 ; free physical = 180 ; free virtual = 972
+Part : xczu7ev-fbvb900-1-e
+XDC  : /home/arc/ARC_Development/ARC_CUSTOM_CARRIER/reference/hardware_history/system_constr_historical.xdc
+Unique PACKAGE_PIN entries: 65
+------------------------------------------------------------
+FAIL  A3
+FAIL  A4
+FAIL  A7
+FAIL  A8
+FAIL  AE8
+FAIL  AE9
+FAIL  AF10
+FAIL  AF11
+FAIL  AF12
+FAIL  AF2
+FAIL  AF3
+FAIL  AF5
+FAIL  AF6
+FAIL  AF7
+FAIL  AF8
+FAIL  AG1
+FAIL  AG10
+FAIL  AG11
+FAIL  AG3
+FAIL  AG4
+FAIL  AG5
+FAIL  AG6
+FAIL  AG8
+FAIL  AH1
+FAIL  AH11
+FAIL  AH12
+FAIL  AH2
+FAIL  AH3
+FAIL  AH6
+FAIL  AH7
+FAIL  AH8
+FAIL  AH9
+FAIL  AJ10
+FAIL  AJ11
+FAIL  AJ12
+FAIL  AJ4
+FAIL  AJ5
+FAIL  AJ6
+FAIL  AJ7
+FAIL  AK10
+FAIL  AK11
+FAIL  AK2
+FAIL  AK3
+FAIL  AK4
+FAIL  AK5
+FAIL  AK6
+FAIL  AK7
+FAIL  AK8
+FAIL  AK9
+FAIL  B1
+FAIL  B10
+FAIL  B2
+FAIL  B5
+FAIL  B6
+FAIL  B9
+FAIL  C3
+FAIL  C4
+FAIL  C7
+FAIL  C8
+FAIL  D1
+FAIL  D10
+FAIL  D2
+FAIL  D5
+FAIL  D6
+FAIL  D9
+------------------------------------------------------------
+Failures: 65
+ARC_XDC_PACKAGE_PIN_PASS=0
+INFO: [Common 17-206] Exiting Vivado at Thu Sep 17 11:06:04 2026...

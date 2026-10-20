@@ -1,0 +1,25 @@
+ARC CUSTOM CARRIER - HARDWARE SOURCE BASELINE
+
+Repository:
+git@github.com:arclab22026-hub/hardware_design.git
+
+Branch:
+main
+
+Baseline SHA:
+ee48176cedbb858a3db75f33cd90dff9ccac052a
+
+Target SOM:
+Avnet/Tria UltraZed-EV
+
+Target FPGA:
+xczu7ev-fbvb900-1-e
+
+Hardware repository role:
+Carrier schematic / PCB / hardware decisions
+
+Known firmware blockers:
+- Final JESD lane mapping not frozen
+- Final I/O pin constraints not available
+- Final carrier XDC not available
+- Developer Vivado XSA/project not yet located

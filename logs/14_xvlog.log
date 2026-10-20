@@ -1,0 +1,4 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/arc/ARC_Development/ARC_CUSTOM_CARRIER/rtl/arc_controlled_counter8.v" into library work
+INFO: [VRFC 10-311] analyzing module arc_controlled_counter8
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/arc/ARC_Development/ARC_CUSTOM_CARRIER/sim/tb_arc_controlled_counter8.v" into library work
+INFO: [VRFC 10-311] analyzing module tb_arc_controlled_counter8

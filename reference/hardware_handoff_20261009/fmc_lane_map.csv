@@ -1,0 +1,11 @@
+lane,direction,quad,channel,j2_pin_p,j2_pin_n,row,polarity,status,crossing_check
+DP0_C2M,C2M,227,TX0,D20,D21,D,swapped,REMAP,"DEC-590: quad-227 TX0/TX2 swap with DP1_C2M to fix J2/J4 order mismatch (reports/bus_feasibility.md) -- J2 pin only, J4 pin (C2/C3) unchanged. DEC-603: rebuilt on In2 (south exit), no pin change; pin-to-pin INVERTED -> TXPOLARITY=1."
+DP1_C2M,C2M,227,TX2,D23,D24,D,swapped,REMAP,"DEC-590: quad-227 TX0/TX2 swap with DP0_C2M to fix J2/J4 order mismatch -- J2 pin only. DEC-603: J4.A22/A23 labels swapped (schematic+board), lane rebuilt on In2 (north exit); J2 pins unchanged; pin-to-pin DIRECT -> TXPOLARITY=0."
+DP2_C2M,C2M,226,TX1,D29,D30,D,swapped,REMAP,"DEC-604: J4.A26/A27 labels swapped (schematic+board), lane built on In2 (north exit, 3rd In2 lane); J2 pins unchanged; pin-to-pin DIRECT -> TXPOLARITY=0."
+DP3_C2M,C2M,226,TX3,D32,D33,D,swapped,REMAP,"DEC-603: J4.A30/A31 labels swapped (schematic+board), lane rebuilt on In7 (north exit); J2 pins unchanged; pin-to-pin DIRECT -> TXPOLARITY=0."
+DP1_M2C,M2C,227,RX1,A21,A22,A,swapped,unchanged,
+DP3_M2C,M2C,225,RX3,A39,A40,A,swapped,REMAP,"DEC-601 (closes DEF-165): schematic made to match the as-built board. J2.A39=GTH11_RX_P ball carries net FMC_DP3_M2C_N, J2.A40 carries _P; J4.A10(VITA P)=_N, A11=_P, so pin-to-pin P<->P is DIRECT: RXPOLARITY=0. Supersedes the DEC-594 RXPOLARITY=1 note."
+DP0_M2C,M2C,226,RX0,A27,A28,A,swapped,REMAP,"DEC-597: J4.C6/C7 labels swapped, lane rebuilt on In9 NE of DP1 with via-in-pad at J4; J2 pins unchanged. RXPOLARITY=0 (direct pin-to-pin)."
+DP2_M2C,M2C,226,RX2,A30,A31,A,swapped,REMAP,"DEC-598: rebuilt on In9 SW of DP1 (J2 pad vias direct, J4 east-strip vias reused); no pin or polarity change.""J4 surface escape merged (DEC-583), B.Cu->through via, no crossing/polarity issue."
+GBTCLK1,REFCLK,225,REFCLK0,D41,D42,D,swapped,REMAP,"DEC-599: moved from quad 226 REFCLK1 (A33/A34) to quad 225 REFCLK0 (JX2.D41/D42, FPGA L8/L7): the only outer-row refclk pair NORTH of DP3_M2C's J2 loop, so the lane can run NE of DP3 to J4.B20/B21 with no crossing. P net lands on D42 (J4 B21 unchanged). Refclk polarity inversion harmless."
+GBTCLK0,REFCLK,227,REFCLK0,D26,D27,D,direct,unchanged,

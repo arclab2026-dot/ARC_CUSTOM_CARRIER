@@ -1,0 +1,2 @@
+a870f631ccd141400600686af9c35998c957adb593c38308ab143079c00e64b2  build/vitis_boot/arc_uzev_boot/export/arc_uzev_boot/sw/arc_uzev_boot/boot/fsbl.elf
+5eff803dbd45115951b4c2847b5151a0b08f6994edcd2b30653117da688791a2  build/vitis_boot/arc_uzev_boot/export/arc_uzev_boot/sw/arc_uzev_boot/boot/pmufw.elf

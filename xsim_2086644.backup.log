@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# xsim v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 04:59:54 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Fri Sep 18 15:03:41 2026
+# Process ID: 2086644
+# Current directory: /home/arc/ARC_Development/ARC_CUSTOM_CARRIER
+# Command line: xsim -mode tcl -source {xsim.dir/arc_counter_sim/xsim_script.tcl}
+# Log file: /home/arc/ARC_Development/ARC_CUSTOM_CARRIER/xsim.log
+# Journal file: /home/arc/ARC_Development/ARC_CUSTOM_CARRIER/xsim.jou
+# Running On: arc-iMac, OS: Linux, CPU Frequency: 3000.000 MHz, CPU Physical cores: 4, Host memory: 8215 MB
+#-----------------------------------------------------------
+source xsim.dir/arc_counter_sim/xsim_script.tcl
+# xsim {arc_counter_sim} -autoloadwcfg -runall
+Time resolution is 1 ps
+run -all
+RESET_TEST=PASS
+ENABLE_TEST=PASS
+HOLD_TEST=PASS
+CLEAR_TEST=PASS
+ARC_CONTROLLED_COUNTER_SIM_PASS=1
+$finish called at time : 126 ns : File "/home/arc/ARC_Development/ARC_CUSTOM_CARRIER/sim/tb_arc_controlled_counter8.v" Line 75
+exit
+INFO: [Common 17-206] Exiting xsim at Fri Sep 18 15:03:45 2026...

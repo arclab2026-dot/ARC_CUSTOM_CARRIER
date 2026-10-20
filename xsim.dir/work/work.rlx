@@ -1,0 +1,10 @@
+0.7
+2020.2
+Oct 14 2022
+05:07:14
+/home/arc/ARC_Development/ARC_CUSTOM_CARRIER/ip_repo/arc_ctrl_status_v1_0/arc_ctrl_status_1_0/hdl/arc_ctrl_status_v1_0.v,1789762341,verilog,,/home/arc/ARC_Development/ARC_CUSTOM_CARRIER/rtl/arc_controlled_counter8.v,,arc_ctrl_status_v1_0,,,,,,,,
+/home/arc/ARC_Development/ARC_CUSTOM_CARRIER/ip_repo/arc_ctrl_status_v1_0/arc_ctrl_status_1_0/hdl/arc_ctrl_status_v1_0_S_AXI.v,1790084315,verilog,,/home/arc/ARC_Development/ARC_CUSTOM_CARRIER/ip_repo/arc_ctrl_status_v1_0/arc_ctrl_status_1_0/hdl/arc_ctrl_status_v1_0.v,,arc_ctrl_status_v1_0_S_AXI,,,,,,,,
+/home/arc/ARC_Development/ARC_CUSTOM_CARRIER/rtl/arc_controlled_counter8.v,1789758169,verilog,,/home/arc/ARC_Development/ARC_CUSTOM_CARRIER/sim/tb_arc_ps_pl_system.v,,arc_controlled_counter8,,,,,,,,
+/home/arc/ARC_Development/ARC_CUSTOM_CARRIER/sim/tb_arc_controlled_counter8.v,1789757961,verilog,,,,tb_arc_controlled_counter8,,,,,,,,
+/home/arc/ARC_Development/ARC_CUSTOM_CARRIER/sim/tb_arc_ctrl_status.v,1789762760,verilog,,,,tb_arc_ctrl_status,,,,,,,,
+/home/arc/ARC_Development/ARC_CUSTOM_CARRIER/sim/tb_arc_ps_pl_system.v,1790086071,verilog,,,,tb_arc_ps_pl_system,,,,,,,,

@@ -1,0 +1,14 @@
+ARC Hardware Handoff Status
+
+Date: 2026-10-09
+
+system_constr.xdc and fmc_lane_map.csv are being used as the current
+PROVISIONAL hardware baseline.
+
+Known condition:
+- GTH/JESD lane and reference-clock mappings may change.
+- Historical constraint files are retained for comparison.
+- Any later hardware revision requires re-running FPGA implementation,
+  timing, DRC, bitstream generation, and relevant boot-image generation.
+
+Do not treat this pinout as final until confirmed by the hardware designer.

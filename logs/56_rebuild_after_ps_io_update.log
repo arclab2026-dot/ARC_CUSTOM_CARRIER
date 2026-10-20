@@ -1,0 +1,414 @@
+
+****** Vivado v2022.2 (64-bit)
+  **** SW Build 3671981 on Fri Oct 14 04:59:54 MDT 2022
+  **** IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+source tcl/56_rebuild_after_ps_io_update.tcl -notrace
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/arc/ARC_Development/ARC_CUSTOM_CARRIER/ip_repo/arc_ctrl_status_v1_0'.
+WARNING: [IP_Flow 19-3685] Ignored loading user repository '/home/arc/ARC_Development/ARC_CUSTOM_CARRIER/ip_repo/arc_ctrl_status_v1_0/arc_ctrl_status_1_0'. The path is contained within another repository.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/mnt/xilinx/Xilinx_Vitis_2022_2/Vivado/2022.2/data/ip'.
+open_project: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1777.109 ; gain = 162.656 ; free physical = 279 ; free virtual = 9329
+Reading block design file </home/arc/ARC_Development/ARC_CUSTOM_CARRIER/build/vivado/arc_uzev_base/arc_uzev_base.srcs/sources_1/bd/system/system.bd>...
+Adding component instance block -- xilinx.com:ip:zynq_ultra_ps_e:3.4 - zynq_ultra_ps_e_0
+Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - axi_interconnect_0
+Adding component instance block -- xilinx.com:ip:axi_dwidth_converter:2.1 - auto_ds
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - rst_ps_100m
+Adding component instance block -- xilinx.com:ip:xlconstant:1.1 - reset_clock_locked
+Adding component instance block -- xilinx.com:module_ref:arc_controlled_counter8:1.0 - arc_controlled_counter8_0
+Adding component instance block -- agileradiocom.com:user:arc_ctrl_status:1.0 - arc_ctrl_status_0
+Successfully read diagram <system> from block design file </home/arc/ARC_Development/ARC_CUSTOM_CARRIER/build/vivado/arc_uzev_base/arc_uzev_base.srcs/sources_1/bd/system/system.bd>
+===== REGENERATE BLOCK DESIGN =====
+INFO: [BD 5-320] Validate design is not run, since the design is already validated.
+INFO: [BD 41-1662] The design 'system.bd' is already validated. Therefore parameter propagation will not be re-run.
+Verilog Output written to : /home/arc/ARC_Development/ARC_CUSTOM_CARRIER/build/vivado/arc_uzev_base/arc_uzev_base.gen/sources_1/bd/system/synth/system.v
+Verilog Output written to : /home/arc/ARC_Development/ARC_CUSTOM_CARRIER/build/vivado/arc_uzev_base/arc_uzev_base.gen/sources_1/bd/system/sim/system.v
+Verilog Output written to : /home/arc/ARC_Development/ARC_CUSTOM_CARRIER/build/vivado/arc_uzev_base/arc_uzev_base.gen/sources_1/bd/system/hdl/system_wrapper.v
+INFO: [xilinx.com:ip:zynq_ultra_ps_e:3.4-0] system_zynq_ultra_ps_e_0_0: 
+Changes in your design (including the PCW configuration settings) are not automatically exported from Vivado to Xilinx's SDK, Petalinux or Yocto.
+This is by design to avoid disrupting existing embedded development efforts. To have any changes of your design taking effect in the embedded software flow please export your
+design by going through Vivado's main menu, click on File, then Export finally select Export Hardware, please ensure you click on the Include BitStream option.
+The auto-generated HDF file is all you need to import in Xilinx's SDK, Petalinux or Yocto for your changes to be reflected in the Embedded Software Flow.
+For more information, please consult PG201, section: Exporting PCW Settings to Embedded Software Flows
+INFO: [PSU-0] Address Range of DDR (0x7ff00000 to 0x7fffffff) is reserved by PMU for internal purpose.
+INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI_HPM0_FPD'. A default connection has been created.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block zynq_ultra_ps_e_0 .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/arc/ARC_Development/ARC_CUSTOM_CARRIER/build/vivado/arc_uzev_base/arc_uzev_base.gen/sources_1/bd/system/ip/system_auto_ds_0/system_auto_ds_0_ooc.xdc'
+INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI'. A default connection has been created.
+INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI'. A default connection has been created.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/s00_couplers/auto_ds .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/arc/ARC_Development/ARC_CUSTOM_CARRIER/build/vivado/arc_uzev_base/arc_uzev_base.gen/sources_1/bd/system/ip/system_auto_pc_0/system_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/s00_couplers/auto_pc .
+Exporting to file /home/arc/ARC_Development/ARC_CUSTOM_CARRIER/build/vivado/arc_uzev_base/arc_uzev_base.gen/sources_1/bd/system/hw_handoff/system.hwh
+Generated Hardware Definition File /home/arc/ARC_Development/ARC_CUSTOM_CARRIER/build/vivado/arc_uzev_base/arc_uzev_base.gen/sources_1/bd/system/synth/system.hwdef
+generate_target: Time (s): cpu = 00:00:23 ; elapsed = 00:00:29 . Memory (MB): peak = 2180.816 ; gain = 327.656 ; free physical = 241 ; free virtual = 9133
+===== RESET SYNTHESIS =====
+INFO: [Project 1-1161] Replacing file /home/arc/ARC_Development/ARC_CUSTOM_CARRIER/build/vivado/arc_uzev_base/arc_uzev_base.srcs/utils_1/imports/synth_1/system_wrapper.dcp with file /home/arc/ARC_Development/ARC_CUSTOM_CARRIER/build/vivado/arc_uzev_base/arc_uzev_base.runs/synth_1/system_wrapper.dcp
+===== START SYNTHESIS =====
+INFO: [IP_Flow 19-6930] IPCACHE: runCacheChecks() number of threads = 8
+INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP system_auto_ds_0
+INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP system_auto_pc_0
+INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP system_zynq_ultra_ps_e_0_0
+INFO: [IP_Flow 19-8020] IPCACHE: runCacheChecks() calling threadPool finishWork()
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: system_auto_ds_0
+INFO: [IP_Flow 19-6922] IPCACHE: Exporting cached entry 278eaddd25df06c4 to dir: /home/arc/ARC_Development/ARC_CUSTOM_CARRIER/build/vivado/arc_uzev_base/arc_uzev_base.gen/sources_1/bd/system/ip/system_auto_ds_0
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file /home/arc/ARC_Development/ARC_CUSTOM_CARRIER/build/vivado/arc_uzev_base/arc_uzev_base.cache/ip/2022.2/2/7/278eaddd25df06c4/system_auto_ds_0_stub.vhdl to /home/arc/ARC_Development/ARC_CUSTOM_CARRIER/build/vivado/arc_uzev_base/arc_uzev_base.gen/sources_1/bd/system/ip/system_auto_ds_0/system_auto_ds_0_stub.vhdl.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: /home/arc/ARC_Development/ARC_CUSTOM_CARRIER/build/vivado/arc_uzev_base/arc_uzev_base.gen/sources_1/bd/system/ip/system_auto_ds_0/system_auto_ds_0_stub.vhdl
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file /home/arc/ARC_Development/ARC_CUSTOM_CARRIER/build/vivado/arc_uzev_base/arc_uzev_base.cache/ip/2022.2/2/7/278eaddd25df06c4/system_auto_ds_0_sim_netlist.vhdl to /home/arc/ARC_Development/ARC_CUSTOM_CARRIER/build/vivado/arc_uzev_base/arc_uzev_base.gen/sources_1/bd/system/ip/system_auto_ds_0/system_auto_ds_0_sim_netlist.vhdl.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: /home/arc/ARC_Development/ARC_CUSTOM_CARRIER/build/vivado/arc_uzev_base/arc_uzev_base.gen/sources_1/bd/system/ip/system_auto_ds_0/system_auto_ds_0_sim_netlist.vhdl
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file /home/arc/ARC_Development/ARC_CUSTOM_CARRIER/build/vivado/arc_uzev_base/arc_uzev_base.cache/ip/2022.2/2/7/278eaddd25df06c4/system_auto_ds_0_stub.v to /home/arc/ARC_Development/ARC_CUSTOM_CARRIER/build/vivado/arc_uzev_base/arc_uzev_base.gen/sources_1/bd/system/ip/system_auto_ds_0/system_auto_ds_0_stub.v.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: /home/arc/ARC_Development/ARC_CUSTOM_CARRIER/build/vivado/arc_uzev_base/arc_uzev_base.gen/sources_1/bd/system/ip/system_auto_ds_0/system_auto_ds_0_stub.v
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file /home/arc/ARC_Development/ARC_CUSTOM_CARRIER/build/vivado/arc_uzev_base/arc_uzev_base.cache/ip/2022.2/2/7/278eaddd25df06c4/system_auto_ds_0.dcp to /home/arc/ARC_Development/ARC_CUSTOM_CARRIER/build/vivado/arc_uzev_base/arc_uzev_base.gen/sources_1/bd/system/ip/system_auto_ds_0/system_auto_ds_0.dcp.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: /home/arc/ARC_Development/ARC_CUSTOM_CARRIER/build/vivado/arc_uzev_base/arc_uzev_base.gen/sources_1/bd/system/ip/system_auto_ds_0/system_auto_ds_0.dcp
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file /home/arc/ARC_Development/ARC_CUSTOM_CARRIER/build/vivado/arc_uzev_base/arc_uzev_base.cache/ip/2022.2/2/7/278eaddd25df06c4/system_auto_ds_0_sim_netlist.v to /home/arc/ARC_Development/ARC_CUSTOM_CARRIER/build/vivado/arc_uzev_base/arc_uzev_base.gen/sources_1/bd/system/ip/system_auto_ds_0/system_auto_ds_0_sim_netlist.v.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: /home/arc/ARC_Development/ARC_CUSTOM_CARRIER/build/vivado/arc_uzev_base/arc_uzev_base.gen/sources_1/bd/system/ip/system_auto_ds_0/system_auto_ds_0_sim_netlist.v
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP system_auto_ds_0, cache-ID = 278eaddd25df06c4; cache size = 5.720 MB.
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: system_auto_pc_0
+INFO: [IP_Flow 19-6922] IPCACHE: Exporting cached entry 6ece3476c9a6e23d to dir: /home/arc/ARC_Development/ARC_CUSTOM_CARRIER/build/vivado/arc_uzev_base/arc_uzev_base.gen/sources_1/bd/system/ip/system_auto_pc_0
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file /home/arc/ARC_Development/ARC_CUSTOM_CARRIER/build/vivado/arc_uzev_base/arc_uzev_base.cache/ip/2022.2/6/e/6ece3476c9a6e23d/system_auto_pc_0_stub.v to /home/arc/ARC_Development/ARC_CUSTOM_CARRIER/build/vivado/arc_uzev_base/arc_uzev_base.gen/sources_1/bd/system/ip/system_auto_pc_0/system_auto_pc_0_stub.v.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: /home/arc/ARC_Development/ARC_CUSTOM_CARRIER/build/vivado/arc_uzev_base/arc_uzev_base.gen/sources_1/bd/system/ip/system_auto_pc_0/system_auto_pc_0_stub.v
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file /home/arc/ARC_Development/ARC_CUSTOM_CARRIER/build/vivado/arc_uzev_base/arc_uzev_base.cache/ip/2022.2/6/e/6ece3476c9a6e23d/system_auto_pc_0_stub.vhdl to /home/arc/ARC_Development/ARC_CUSTOM_CARRIER/build/vivado/arc_uzev_base/arc_uzev_base.gen/sources_1/bd/system/ip/system_auto_pc_0/system_auto_pc_0_stub.vhdl.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: /home/arc/ARC_Development/ARC_CUSTOM_CARRIER/build/vivado/arc_uzev_base/arc_uzev_base.gen/sources_1/bd/system/ip/system_auto_pc_0/system_auto_pc_0_stub.vhdl
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file /home/arc/ARC_Development/ARC_CUSTOM_CARRIER/build/vivado/arc_uzev_base/arc_uzev_base.cache/ip/2022.2/6/e/6ece3476c9a6e23d/system_auto_pc_0_sim_netlist.v to /home/arc/ARC_Development/ARC_CUSTOM_CARRIER/build/vivado/arc_uzev_base/arc_uzev_base.gen/sources_1/bd/system/ip/system_auto_pc_0/system_auto_pc_0_sim_netlist.v.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: /home/arc/ARC_Development/ARC_CUSTOM_CARRIER/build/vivado/arc_uzev_base/arc_uzev_base.gen/sources_1/bd/system/ip/system_auto_pc_0/system_auto_pc_0_sim_netlist.v
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file /home/arc/ARC_Development/ARC_CUSTOM_CARRIER/build/vivado/arc_uzev_base/arc_uzev_base.cache/ip/2022.2/6/e/6ece3476c9a6e23d/system_auto_pc_0_sim_netlist.vhdl to /home/arc/ARC_Development/ARC_CUSTOM_CARRIER/build/vivado/arc_uzev_base/arc_uzev_base.gen/sources_1/bd/system/ip/system_auto_pc_0/system_auto_pc_0_sim_netlist.vhdl.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: /home/arc/ARC_Development/ARC_CUSTOM_CARRIER/build/vivado/arc_uzev_base/arc_uzev_base.gen/sources_1/bd/system/ip/system_auto_pc_0/system_auto_pc_0_sim_netlist.vhdl
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file /home/arc/ARC_Development/ARC_CUSTOM_CARRIER/build/vivado/arc_uzev_base/arc_uzev_base.cache/ip/2022.2/6/e/6ece3476c9a6e23d/system_auto_pc_0.dcp to /home/arc/ARC_Development/ARC_CUSTOM_CARRIER/build/vivado/arc_uzev_base/arc_uzev_base.gen/sources_1/bd/system/ip/system_auto_pc_0/system_auto_pc_0.dcp.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: /home/arc/ARC_Development/ARC_CUSTOM_CARRIER/build/vivado/arc_uzev_base/arc_uzev_base.gen/sources_1/bd/system/ip/system_auto_pc_0/system_auto_pc_0.dcp
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP system_auto_pc_0, cache-ID = 6ece3476c9a6e23d; cache size = 5.720 MB.
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: system_zynq_ultra_ps_e_0_0
+[Tue Oct 13 11:06:30 2026] Launched system_zynq_ultra_ps_e_0_0_synth_1...
+Run output will be captured here: /home/arc/ARC_Development/ARC_CUSTOM_CARRIER/build/vivado/arc_uzev_base/arc_uzev_base.runs/system_zynq_ultra_ps_e_0_0_synth_1/runme.log
+[Tue Oct 13 11:06:31 2026] Launched synth_1...
+Run output will be captured here: /home/arc/ARC_Development/ARC_CUSTOM_CARRIER/build/vivado/arc_uzev_base/arc_uzev_base.runs/synth_1/runme.log
+launch_runs: Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 2196.832 ; gain = 16.016 ; free physical = 229 ; free virtual = 9097
+[Tue Oct 13 11:06:31 2026] Waiting for synth_1 to finish...
+
+*** Running vivado
+    with args -log system_wrapper.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source system_wrapper.tcl
+
+
+****** Vivado v2022.2 (64-bit)
+  **** SW Build 3671981 on Fri Oct 14 04:59:54 MDT 2022
+  **** IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+source system_wrapper.tcl -notrace
+create_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:09 . Memory (MB): peak = 1725.379 ; gain = 87.961 ; free physical = 1854 ; free virtual = 8314
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/arc/ARC_Development/ARC_CUSTOM_CARRIER/ip_repo/arc_ctrl_status_v1_0'.
+WARNING: [IP_Flow 19-3685] Ignored loading user repository '/home/arc/ARC_Development/ARC_CUSTOM_CARRIER/ip_repo/arc_ctrl_status_v1_0/arc_ctrl_status_1_0'. The path is contained within another repository.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/mnt/xilinx/Xilinx_Vitis_2022_2/Vivado/2022.2/data/ip'.
+add_files: Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 1803.172 ; gain = 42.105 ; free physical = 1629 ; free virtual = 8253
+Command: read_checkpoint -auto_incremental -incremental /home/arc/ARC_Development/ARC_CUSTOM_CARRIER/build/vivado/arc_uzev_base/arc_uzev_base.srcs/utils_1/imports/synth_1/system_wrapper.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from /home/arc/ARC_Development/ARC_CUSTOM_CARRIER/build/vivado/arc_uzev_base/arc_uzev_base.srcs/utils_1/imports/synth_1/system_wrapper.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top system_wrapper -part xczu7ev-fbvb900-1-e
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xczu7ev'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xczu7ev'
+INFO: [Device 21-403] Loading part xczu7ev-fbvb900-1-e
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 476872
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [/mnt/xilinx/Xilinx_Vitis_2022_2/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 3082.875 ; gain = 232.797 ; free physical = 173 ; free virtual = 6860
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2644.892; parent = 2388.613; children = 256.278
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4054.832; parent = 3085.848; children = 968.984
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'system_wrapper' [/home/arc/ARC_Development/ARC_CUSTOM_CARRIER/build/vivado/arc_uzev_base/arc_uzev_base.gen/sources_1/bd/system/hdl/system_wrapper.v:12]
+INFO: [Synth 8-6157] synthesizing module 'system' [/home/arc/ARC_Development/ARC_CUSTOM_CARRIER/build/vivado/arc_uzev_base/arc_uzev_base.gen/sources_1/bd/system/synth/system.v:422]
+INFO: [Synth 8-6157] synthesizing module 'system_arc_controlled_counter8_0_0' [/home/arc/ARC_Development/ARC_CUSTOM_CARRIER/build/vivado/arc_uzev_base/arc_uzev_base.runs/synth_1/.Xil/Vivado-476772-arc-iMac/realtime/system_arc_controlled_counter8_0_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'system_arc_controlled_counter8_0_0' (0#1) [/home/arc/ARC_Development/ARC_CUSTOM_CARRIER/build/vivado/arc_uzev_base/arc_uzev_base.runs/synth_1/.Xil/Vivado-476772-arc-iMac/realtime/system_arc_controlled_counter8_0_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'system_arc_ctrl_status_0_0' [/home/arc/ARC_Development/ARC_CUSTOM_CARRIER/build/vivado/arc_uzev_base/arc_uzev_base.runs/synth_1/.Xil/Vivado-476772-arc-iMac/realtime/system_arc_ctrl_status_0_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'system_arc_ctrl_status_0_0' (0#1) [/home/arc/ARC_Development/ARC_CUSTOM_CARRIER/build/vivado/arc_uzev_base/arc_uzev_base.runs/synth_1/.Xil/Vivado-476772-arc-iMac/realtime/system_arc_ctrl_status_0_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'system_axi_interconnect_0_0' [/home/arc/ARC_Development/ARC_CUSTOM_CARRIER/build/vivado/arc_uzev_base/arc_uzev_base.gen/sources_1/bd/system/synth/system.v:635]
+INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_Y9JEWS' [/home/arc/ARC_Development/ARC_CUSTOM_CARRIER/build/vivado/arc_uzev_base/arc_uzev_base.gen/sources_1/bd/system/synth/system.v:12]
+INFO: [Synth 8-6157] synthesizing module 'system_auto_ds_0' [/home/arc/ARC_Development/ARC_CUSTOM_CARRIER/build/vivado/arc_uzev_base/arc_uzev_base.runs/synth_1/.Xil/Vivado-476772-arc-iMac/realtime/system_auto_ds_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'system_auto_ds_0' (0#1) [/home/arc/ARC_Development/ARC_CUSTOM_CARRIER/build/vivado/arc_uzev_base/arc_uzev_base.runs/synth_1/.Xil/Vivado-476772-arc-iMac/realtime/system_auto_ds_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'system_auto_pc_0' [/home/arc/ARC_Development/ARC_CUSTOM_CARRIER/build/vivado/arc_uzev_base/arc_uzev_base.runs/synth_1/.Xil/Vivado-476772-arc-iMac/realtime/system_auto_pc_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'system_auto_pc_0' (0#1) [/home/arc/ARC_Development/ARC_CUSTOM_CARRIER/build/vivado/arc_uzev_base/arc_uzev_base.runs/synth_1/.Xil/Vivado-476772-arc-iMac/realtime/system_auto_pc_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_Y9JEWS' (0#1) [/home/arc/ARC_Development/ARC_CUSTOM_CARRIER/build/vivado/arc_uzev_base/arc_uzev_base.gen/sources_1/bd/system/synth/system.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'system_axi_interconnect_0_0' (0#1) [/home/arc/ARC_Development/ARC_CUSTOM_CARRIER/build/vivado/arc_uzev_base/arc_uzev_base.gen/sources_1/bd/system/synth/system.v:635]
+INFO: [Synth 8-6157] synthesizing module 'system_reset_clock_locked_0' [/home/arc/ARC_Development/ARC_CUSTOM_CARRIER/build/vivado/arc_uzev_base/arc_uzev_base.gen/sources_1/bd/system/ip/system_reset_clock_locked_0/synth/system_reset_clock_locked_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'xlconstant_v1_1_7_xlconstant' [/home/arc/ARC_Development/ARC_CUSTOM_CARRIER/build/vivado/arc_uzev_base/arc_uzev_base.gen/sources_1/bd/system/ipshared/badb/hdl/xlconstant_v1_1_vl_rfs.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'xlconstant_v1_1_7_xlconstant' (0#1) [/home/arc/ARC_Development/ARC_CUSTOM_CARRIER/build/vivado/arc_uzev_base/arc_uzev_base.gen/sources_1/bd/system/ipshared/badb/hdl/xlconstant_v1_1_vl_rfs.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'system_reset_clock_locked_0' (0#1) [/home/arc/ARC_Development/ARC_CUSTOM_CARRIER/build/vivado/arc_uzev_base/arc_uzev_base.gen/sources_1/bd/system/ip/system_reset_clock_locked_0/synth/system_reset_clock_locked_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'system_rst_ps_100m_0' [/home/arc/ARC_Development/ARC_CUSTOM_CARRIER/build/vivado/arc_uzev_base/arc_uzev_base.runs/synth_1/.Xil/Vivado-476772-arc-iMac/realtime/system_rst_ps_100m_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'system_rst_ps_100m_0' (0#1) [/home/arc/ARC_Development/ARC_CUSTOM_CARRIER/build/vivado/arc_uzev_base/arc_uzev_base.runs/synth_1/.Xil/Vivado-476772-arc-iMac/realtime/system_rst_ps_100m_0_stub.v:5]
+WARNING: [Synth 8-7071] port 'mb_reset' of module 'system_rst_ps_100m_0' is unconnected for instance 'rst_ps_100m' [/home/arc/ARC_Development/ARC_CUSTOM_CARRIER/build/vivado/arc_uzev_base/arc_uzev_base.gen/sources_1/bd/system/synth/system.v:584]
+WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'system_rst_ps_100m_0' is unconnected for instance 'rst_ps_100m' [/home/arc/ARC_Development/ARC_CUSTOM_CARRIER/build/vivado/arc_uzev_base/arc_uzev_base.gen/sources_1/bd/system/synth/system.v:584]
+WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'system_rst_ps_100m_0' is unconnected for instance 'rst_ps_100m' [/home/arc/ARC_Development/ARC_CUSTOM_CARRIER/build/vivado/arc_uzev_base/arc_uzev_base.gen/sources_1/bd/system/synth/system.v:584]
+WARNING: [Synth 8-7023] instance 'rst_ps_100m' of module 'system_rst_ps_100m_0' has 10 connections declared, but only 7 given [/home/arc/ARC_Development/ARC_CUSTOM_CARRIER/build/vivado/arc_uzev_base/arc_uzev_base.gen/sources_1/bd/system/synth/system.v:584]
+INFO: [Synth 8-6157] synthesizing module 'system_zynq_ultra_ps_e_0_0' [/home/arc/ARC_Development/ARC_CUSTOM_CARRIER/build/vivado/arc_uzev_base/arc_uzev_base.runs/synth_1/.Xil/Vivado-476772-arc-iMac/realtime/system_zynq_ultra_ps_e_0_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'system_zynq_ultra_ps_e_0_0' (0#1) [/home/arc/ARC_Development/ARC_CUSTOM_CARRIER/build/vivado/arc_uzev_base/arc_uzev_base.runs/synth_1/.Xil/Vivado-476772-arc-iMac/realtime/system_zynq_ultra_ps_e_0_0_stub.v:5]
+WARNING: [Synth 8-7071] port 'maxigp0_awuser' of module 'system_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [/home/arc/ARC_Development/ARC_CUSTOM_CARRIER/build/vivado/arc_uzev_base/arc_uzev_base.gen/sources_1/bd/system/synth/system.v:592]
+WARNING: [Synth 8-7071] port 'maxigp0_aruser' of module 'system_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [/home/arc/ARC_Development/ARC_CUSTOM_CARRIER/build/vivado/arc_uzev_base/arc_uzev_base.gen/sources_1/bd/system/synth/system.v:592]
+WARNING: [Synth 8-7023] instance 'zynq_ultra_ps_e_0' of module 'system_zynq_ultra_ps_e_0_0' has 42 connections declared, but only 40 given [/home/arc/ARC_Development/ARC_CUSTOM_CARRIER/build/vivado/arc_uzev_base/arc_uzev_base.gen/sources_1/bd/system/synth/system.v:592]
+INFO: [Synth 8-6155] done synthesizing module 'system' (0#1) [/home/arc/ARC_Development/ARC_CUSTOM_CARRIER/build/vivado/arc_uzev_base/arc_uzev_base.gen/sources_1/bd/system/synth/system.v:422]
+INFO: [Synth 8-6155] done synthesizing module 'system_wrapper' (0#1) [/home/arc/ARC_Development/ARC_CUSTOM_CARRIER/build/vivado/arc_uzev_base/arc_uzev_base.gen/sources_1/bd/system/hdl/system_wrapper.v:12]
+WARNING: [Synth 8-7129] Port M_ACLK in module s00_couplers_imp_Y9JEWS is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ARESETN in module s00_couplers_imp_Y9JEWS is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ACLK in module system_axi_interconnect_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ARESETN in module system_axi_interconnect_0_0 is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 3153.812 ; gain = 303.734 ; free physical = 289 ; free virtual = 6925
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2644.892; parent = 2388.613; children = 256.278
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4122.801; parent = 3153.816; children = 968.984
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 3171.625 ; gain = 321.547 ; free physical = 289 ; free virtual = 6926
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2644.892; parent = 2388.613; children = 256.278
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4140.613; parent = 3171.629; children = 968.984
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 3171.625 ; gain = 321.547 ; free physical = 289 ; free virtual = 6926
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2644.892; parent = 2388.613; children = 256.278
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4140.613; parent = 3171.629; children = 968.984
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 3171.625 ; gain = 0.000 ; free physical = 286 ; free virtual = 6923
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/arc/ARC_Development/ARC_CUSTOM_CARRIER/build/vivado/arc_uzev_base/arc_uzev_base.gen/sources_1/bd/system/ip/system_zynq_ultra_ps_e_0_0/system_zynq_ultra_ps_e_0_0/system_zynq_ultra_ps_e_0_0_in_context.xdc] for cell 'system_i/zynq_ultra_ps_e_0'
+Finished Parsing XDC File [/home/arc/ARC_Development/ARC_CUSTOM_CARRIER/build/vivado/arc_uzev_base/arc_uzev_base.gen/sources_1/bd/system/ip/system_zynq_ultra_ps_e_0_0/system_zynq_ultra_ps_e_0_0/system_zynq_ultra_ps_e_0_0_in_context.xdc] for cell 'system_i/zynq_ultra_ps_e_0'
+Parsing XDC File [/home/arc/ARC_Development/ARC_CUSTOM_CARRIER/build/vivado/arc_uzev_base/arc_uzev_base.gen/sources_1/bd/system/ip/system_auto_ds_0/system_auto_ds_0/system_auto_ds_0_in_context.xdc] for cell 'system_i/axi_interconnect_0/s00_couplers/auto_ds'
+Finished Parsing XDC File [/home/arc/ARC_Development/ARC_CUSTOM_CARRIER/build/vivado/arc_uzev_base/arc_uzev_base.gen/sources_1/bd/system/ip/system_auto_ds_0/system_auto_ds_0/system_auto_ds_0_in_context.xdc] for cell 'system_i/axi_interconnect_0/s00_couplers/auto_ds'
+Parsing XDC File [/home/arc/ARC_Development/ARC_CUSTOM_CARRIER/build/vivado/arc_uzev_base/arc_uzev_base.gen/sources_1/bd/system/ip/system_auto_pc_0/system_auto_pc_0/system_auto_pc_0_in_context.xdc] for cell 'system_i/axi_interconnect_0/s00_couplers/auto_pc'
+Finished Parsing XDC File [/home/arc/ARC_Development/ARC_CUSTOM_CARRIER/build/vivado/arc_uzev_base/arc_uzev_base.gen/sources_1/bd/system/ip/system_auto_pc_0/system_auto_pc_0/system_auto_pc_0_in_context.xdc] for cell 'system_i/axi_interconnect_0/s00_couplers/auto_pc'
+Parsing XDC File [/home/arc/ARC_Development/ARC_CUSTOM_CARRIER/build/vivado/arc_uzev_base/arc_uzev_base.gen/sources_1/bd/system/ip/system_rst_ps_100m_0/system_rst_ps_100m_0/system_rst_ps_100m_0_in_context.xdc] for cell 'system_i/rst_ps_100m'
+Finished Parsing XDC File [/home/arc/ARC_Development/ARC_CUSTOM_CARRIER/build/vivado/arc_uzev_base/arc_uzev_base.gen/sources_1/bd/system/ip/system_rst_ps_100m_0/system_rst_ps_100m_0/system_rst_ps_100m_0_in_context.xdc] for cell 'system_i/rst_ps_100m'
+Parsing XDC File [/home/arc/ARC_Development/ARC_CUSTOM_CARRIER/build/vivado/arc_uzev_base/arc_uzev_base.gen/sources_1/bd/system/ip/system_arc_controlled_counter8_0_0/system_arc_controlled_counter8_0_0/system_arc_controlled_counter8_0_0_in_context.xdc] for cell 'system_i/arc_controlled_counter8_0'
+Finished Parsing XDC File [/home/arc/ARC_Development/ARC_CUSTOM_CARRIER/build/vivado/arc_uzev_base/arc_uzev_base.gen/sources_1/bd/system/ip/system_arc_controlled_counter8_0_0/system_arc_controlled_counter8_0_0/system_arc_controlled_counter8_0_0_in_context.xdc] for cell 'system_i/arc_controlled_counter8_0'
+Parsing XDC File [/home/arc/ARC_Development/ARC_CUSTOM_CARRIER/build/vivado/arc_uzev_base/arc_uzev_base.gen/sources_1/bd/system/ip/system_arc_ctrl_status_0_0/system_arc_ctrl_status_0_0/system_arc_ctrl_status_0_0_in_context.xdc] for cell 'system_i/arc_ctrl_status_0'
+Finished Parsing XDC File [/home/arc/ARC_Development/ARC_CUSTOM_CARRIER/build/vivado/arc_uzev_base/arc_uzev_base.gen/sources_1/bd/system/ip/system_arc_ctrl_status_0_0/system_arc_ctrl_status_0_0/system_arc_ctrl_status_0_0_in_context.xdc] for cell 'system_i/arc_ctrl_status_0'
+Parsing XDC File [/home/arc/ARC_Development/ARC_CUSTOM_CARRIER/build/vivado/arc_uzev_base/arc_uzev_base.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/arc/ARC_Development/ARC_CUSTOM_CARRIER/build/vivado/arc_uzev_base/arc_uzev_base.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3221.453 ; gain = 0.000 ; free physical = 185 ; free virtual = 6846
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.02 . Memory (MB): peak = 3221.453 ; gain = 0.000 ; free physical = 184 ; free virtual = 6846
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [/mnt/xilinx/Xilinx_Vitis_2022_2/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 3221.453 ; gain = 371.375 ; free physical = 260 ; free virtual = 6923
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2655.599; parent = 2399.937; children = 256.278
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4190.441; parent = 3221.457; children = 968.984
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xczu7ev-fbvb900-1-e
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 3221.453 ; gain = 371.375 ; free physical = 260 ; free virtual = 6923
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2655.599; parent = 2399.937; children = 256.278
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4190.441; parent = 3221.457; children = 968.984
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for system_i. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for system_i/zynq_ultra_ps_e_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for system_i/axi_interconnect_0/s00_couplers/auto_ds. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for system_i/axi_interconnect_0/s00_couplers/auto_pc. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for system_i/axi_interconnect_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for system_i/rst_ps_100m. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for system_i/reset_clock_locked. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for system_i/arc_controlled_counter8_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for system_i/arc_ctrl_status_0. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 3221.453 ; gain = 371.375 ; free physical = 260 ; free virtual = 6923
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2655.599; parent = 2399.937; children = 256.278
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4190.441; parent = 3221.457; children = 968.984
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 3221.453 ; gain = 371.375 ; free physical = 260 ; free virtual = 6924
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2655.599; parent = 2399.937; children = 256.278
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4190.441; parent = 3221.457; children = 968.984
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 1728 (col length:144)
+BRAMs: 624 (col length: RAMB18 144 RAMB36 72)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-7129] Port ACLK in module system_axi_interconnect_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ARESETN in module system_axi_interconnect_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_ACLK in module system_axi_interconnect_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_ARESETN in module system_axi_interconnect_0_0 is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:20 . Memory (MB): peak = 3221.453 ; gain = 371.375 ; free physical = 249 ; free virtual = 6918
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2655.599; parent = 2399.937; children = 256.278
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4190.441; parent = 3221.457; children = 968.984
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:28 ; elapsed = 00:00:36 . Memory (MB): peak = 3721.008 ; gain = 870.930 ; free physical = 130 ; free virtual = 6338
+Synthesis current peak Physical Memory [PSS] (MB): peak = 3219.268; parent = 2963.902; children = 256.278
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4689.996; parent = 3721.012; children = 968.984
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:28 ; elapsed = 00:00:36 . Memory (MB): peak = 3721.008 ; gain = 870.930 ; free physical = 130 ; free virtual = 6338
+Synthesis current peak Physical Memory [PSS] (MB): peak = 3219.518; parent = 2964.152; children = 256.278
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4689.996; parent = 3721.012; children = 968.984
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:29 ; elapsed = 00:00:36 . Memory (MB): peak = 3740.039 ; gain = 889.961 ; free physical = 140 ; free virtual = 6318
+Synthesis current peak Physical Memory [PSS] (MB): peak = 3220.279; parent = 2964.914; children = 256.278
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4709.027; parent = 3740.043; children = 968.984
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:33 ; elapsed = 00:00:40 . Memory (MB): peak = 3745.977 ; gain = 895.898 ; free physical = 128 ; free virtual = 6306
+Synthesis current peak Physical Memory [PSS] (MB): peak = 3220.439; parent = 2965.074; children = 256.278
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4714.965; parent = 3745.980; children = 968.984
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:33 ; elapsed = 00:00:40 . Memory (MB): peak = 3745.977 ; gain = 895.898 ; free physical = 128 ; free virtual = 6306
+Synthesis current peak Physical Memory [PSS] (MB): peak = 3220.455; parent = 2965.090; children = 256.278
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4714.965; parent = 3745.980; children = 968.984
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:33 ; elapsed = 00:00:40 . Memory (MB): peak = 3745.977 ; gain = 895.898 ; free physical = 128 ; free virtual = 6306
+Synthesis current peak Physical Memory [PSS] (MB): peak = 3220.584; parent = 2965.219; children = 256.278
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4714.965; parent = 3745.980; children = 968.984
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:33 ; elapsed = 00:00:40 . Memory (MB): peak = 3745.977 ; gain = 895.898 ; free physical = 128 ; free virtual = 6306
+Synthesis current peak Physical Memory [PSS] (MB): peak = 3220.646; parent = 2965.281; children = 256.278
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4714.965; parent = 3745.980; children = 968.984
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:33 ; elapsed = 00:00:41 . Memory (MB): peak = 3745.977 ; gain = 895.898 ; free physical = 128 ; free virtual = 6306
+Synthesis current peak Physical Memory [PSS] (MB): peak = 3220.646; parent = 2965.281; children = 256.278
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4714.965; parent = 3745.980; children = 968.984
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:33 ; elapsed = 00:00:41 . Memory (MB): peak = 3745.977 ; gain = 895.898 ; free physical = 128 ; free virtual = 6306
+Synthesis current peak Physical Memory [PSS] (MB): peak = 3220.662; parent = 2965.297; children = 256.278
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4714.965; parent = 3745.980; children = 968.984
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+-----------------------------------+----------+
+|      |BlackBox name                      |Instances |
++------+-----------------------------------+----------+
+|1     |system_auto_ds_0                   |         1|
+|2     |system_auto_pc_0                   |         1|
+|3     |system_arc_controlled_counter8_0_0 |         1|
+|4     |system_arc_ctrl_status_0_0         |         1|
+|5     |system_rst_ps_100m_0               |         1|
+|6     |system_zynq_ultra_ps_e_0_0         |         1|
++------+-----------------------------------+----------+
+
+Report Cell Usage: 
++------+---------------------------------+------+
+|      |Cell                             |Count |
++------+---------------------------------+------+
+|1     |system_arc_controlled_counter8_0 |     1|
+|2     |system_arc_ctrl_status_0         |     1|
+|3     |system_auto_ds                   |     1|
+|4     |system_auto_pc                   |     1|
+|5     |system_rst_ps_100m               |     1|
+|6     |system_zynq_ultra_ps_e_0         |     1|
++------+---------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:33 ; elapsed = 00:00:41 . Memory (MB): peak = 3745.977 ; gain = 895.898 ; free physical = 128 ; free virtual = 6306
+Synthesis current peak Physical Memory [PSS] (MB): peak = 3220.693; parent = 2965.328; children = 256.278
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4714.965; parent = 3745.980; children = 968.984
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 5 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:27 ; elapsed = 00:00:35 . Memory (MB): peak = 3745.977 ; gain = 846.070 ; free physical = 169 ; free virtual = 6347
+Synthesis Optimization Complete : Time (s): cpu = 00:00:33 ; elapsed = 00:00:41 . Memory (MB): peak = 3745.984 ; gain = 895.898 ; free physical = 169 ; free virtual = 6347
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3745.984 ; gain = 0.000 ; free physical = 169 ; free virtual = 6347
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3783.633 ; gain = 0.000 ; free physical = 209 ; free virtual = 6390
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete, checksum: 58d2eac1
+INFO: [Common 17-83] Releasing license: Synthesis
+48 Infos, 17 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:43 ; elapsed = 00:00:52 . Memory (MB): peak = 3797.570 ; gain = 1990.438 ; free physical = 397 ; free virtual = 6577
+INFO: [Common 17-1381] The checkpoint '/home/arc/ARC_Development/ARC_CUSTOM_CARRIER/build/vivado/arc_uzev_base/arc_uzev_base.runs/synth_1/system_wrapper.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file system_wrapper_utilization_synth.rpt -pb system_wrapper_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Oct 13 11:10:31 2026...
+[Tue Oct 13 11:10:36 2026] synth_1 finished
+wait_on_runs: Time (s): cpu = 00:02:11 ; elapsed = 00:04:05 . Memory (MB): peak = 2196.832 ; gain = 0.000 ; free physical = 2880 ; free virtual = 9082
+SYNTH_STATUS=synth_design Complete!
+SYNTH_PROGRESS=100%
+ARC_PS_IO_REBUILD_SYNTH_PASS=1
+INFO: [Common 17-206] Exiting Vivado at Tue Oct 13 11:10:36 2026...

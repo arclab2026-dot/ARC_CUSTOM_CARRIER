@@ -1,0 +1,61 @@
+
+****** Vivado v2022.2 (64-bit)
+  **** SW Build 3671981 on Fri Oct 14 04:59:54 MDT 2022
+  **** IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+source tcl/15_export_controlled_counter_xsa.tcl -notrace
+============================================================
+ARC - CONTROLLED COUNTER HARDWARE CHECKPOINT
+============================================================
+WARNING: [BD 41-2576] File '/home/arc/ARC_Development/ARC_CUSTOM_CARRIER/build/vivado/arc_uzev_base/arc_uzev_base.srcs/sources_1/bd/system/ip/system_auto_ds_0/system_auto_ds_0.xci' referenced by design 'system' could not be found.
+WARNING: [BD 41-2576] File '/home/arc/ARC_Development/ARC_CUSTOM_CARRIER/build/vivado/arc_uzev_base/arc_uzev_base.srcs/sources_1/bd/system/ip/system_auto_pc_0/system_auto_pc_0.xci' referenced by design 'system' could not be found.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/mnt/xilinx/Xilinx_Vitis_2022_2/Vivado/2022.2/data/ip'.
+open_project: Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1774.332 ; gain = 151.195 ; free physical = 221 ; free virtual = 2431
+PROJECT_PART=xczu7ev-fbvb900-1-e
+Reading block design file </home/arc/ARC_Development/ARC_CUSTOM_CARRIER/build/vivado/arc_uzev_base/arc_uzev_base.srcs/sources_1/bd/system/system.bd>...
+Adding component instance block -- xilinx.com:ip:zynq_ultra_ps_e:3.4 - zynq_ultra_ps_e_0
+Adding component instance block -- xilinx.com:ip:axi_gpio:2.0 - axi_gpio_0
+Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - axi_interconnect_0
+Adding component instance block -- xilinx.com:ip:axi_dwidth_converter:2.1 - auto_ds
+INFO: [BD 41-434] Could not find an IP with XCI file by name: system_auto_ds_0 
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+INFO: [BD 41-434] Could not find an IP with XCI file by name: system_auto_pc_0 
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - rst_ps_100m
+Adding component instance block -- xilinx.com:ip:xlconstant:1.1 - reset_clock_locked
+Adding component instance block -- xilinx.com:module_ref:arc_controlled_counter8:1.0 - arc_controlled_counter8_0
+Successfully read diagram <system> from block design file </home/arc/ARC_Development/ARC_CUSTOM_CARRIER/build/vivado/arc_uzev_base/arc_uzev_base.srcs/sources_1/bd/system/system.bd>
+INFO: [BD 41-433] 
+Design successfully migrated to use XCI files...
+open_bd_design: Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1859.297 ; gain = 43.941 ; free physical = 220 ; free virtual = 2399
+WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /axi_interconnect_0/s00_couplers/auto_ds/S_AXI(0) and /zynq_ultra_ps_e_0/M_AXI_HPM0_FPD(16)
+WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /axi_interconnect_0/s00_couplers/auto_ds/S_AXI(0) and /zynq_ultra_ps_e_0/M_AXI_HPM0_FPD(16)
+Wrote  : </home/arc/ARC_Development/ARC_CUSTOM_CARRIER/build/vivado/arc_uzev_base/arc_uzev_base.srcs/sources_1/bd/system/system.bd> 
+INFO: [BD 41-1662] The design 'system.bd' is already validated. Therefore parameter propagation will not be re-run.
+Verilog Output written to : /home/arc/ARC_Development/ARC_CUSTOM_CARRIER/build/vivado/arc_uzev_base/arc_uzev_base.gen/sources_1/bd/system/synth/system.v
+Verilog Output written to : /home/arc/ARC_Development/ARC_CUSTOM_CARRIER/build/vivado/arc_uzev_base/arc_uzev_base.gen/sources_1/bd/system/sim/system.v
+Verilog Output written to : /home/arc/ARC_Development/ARC_CUSTOM_CARRIER/build/vivado/arc_uzev_base/arc_uzev_base.gen/sources_1/bd/system/hdl/system_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_gpio_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block arc_controlled_counter8_0 .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/arc/ARC_Development/ARC_CUSTOM_CARRIER/build/vivado/arc_uzev_base/arc_uzev_base.gen/sources_1/bd/system/ip/system_auto_ds_0/system_auto_ds_0_ooc.xdc'
+INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI'. A default connection has been created.
+INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI'. A default connection has been created.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/s00_couplers/auto_ds .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/arc/ARC_Development/ARC_CUSTOM_CARRIER/build/vivado/arc_uzev_base/arc_uzev_base.gen/sources_1/bd/system/ip/system_auto_pc_0/system_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/s00_couplers/auto_pc .
+Exporting to file /home/arc/ARC_Development/ARC_CUSTOM_CARRIER/build/vivado/arc_uzev_base/arc_uzev_base.gen/sources_1/bd/system/hw_handoff/system.hwh
+Generated Hardware Definition File /home/arc/ARC_Development/ARC_CUSTOM_CARRIER/build/vivado/arc_uzev_base/arc_uzev_base.gen/sources_1/bd/system/synth/system.hwdef
+generate_target: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 2054.883 ; gain = 192.625 ; free physical = 182 ; free virtual = 2220
+INFO: [Project 1-1918] Creating Hardware Platform: /home/arc/ARC_Development/ARC_CUSTOM_CARRIER/build/handoff/arc_uzev_ps_pl_counter_presynth.xsa ...
+INFO: [Project 1-1943] The Hardware Platform can be used for Hardware
+INFO: [Project 1-1941] Successfully created Hardware Platform: /home/arc/ARC_Development/ARC_CUSTOM_CARRIER/build/handoff/arc_uzev_ps_pl_counter_presynth.xsa
+INFO: [Hsi 55-2053] elapsed time for repository (/mnt/xilinx/Xilinx_Vitis_2022_2/Vivado/2022.2/data/embeddedsw) loading 2 seconds
+write_hw_platform: Time (s): cpu = 00:00:08 ; elapsed = 00:00:12 . Memory (MB): peak = 2176.695 ; gain = 121.812 ; free physical = 236 ; free virtual = 2153
+XSA_FILE=/home/arc/ARC_Development/ARC_CUSTOM_CARRIER/build/handoff/arc_uzev_ps_pl_counter_presynth.xsa
+XSA_SIZE=556931
+ARC_PS_PL_COUNTER_XSA_PASS=1
+INFO: [Common 17-206] Exiting Vivado at Fri Sep 18 15:07:16 2026...

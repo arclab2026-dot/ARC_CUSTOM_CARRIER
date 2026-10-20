@@ -1,0 +1,8 @@
+the_ROM_image:
+{
+	[bootloader] build/boot_components/fsbl.elf
+	build/boot_components/pmufw.elf
+	build/boot_components/system.bit
+	build/boot_components/bl31.elf
+	build/boot_components/u-boot.elf
+}

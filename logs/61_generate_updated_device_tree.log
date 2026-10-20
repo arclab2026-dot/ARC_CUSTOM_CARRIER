@@ -1,0 +1,11 @@
+===== ARC UPDATED DEVICE TREE =====
+XSA=/home/arc/ARC_Development/ARC_CUSTOM_CARRIER/build/handoff/arc_uzev_sd1_uart_v1_with_bitstream.xsa
+DT_REPO=/home/arc/ARC_Development/boot_sources/device-tree-xlnx-2022.2
+OUTPUT=/home/arc/ARC_Development/ARC_CUSTOM_CARRIER/build/device_tree_sd1_uart/generated
+INFO: [Hsi 55-2053] elapsed time for repository (/mnt/xilinx/Xilinx_Vitis_2022_2/Vitis/2022.2/data/embeddedsw) loading 0 seconds
+hsi::open_hw_design: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 742.395 ; gain = 108.152 ; free physical = 1840 ; free virtual = 9795
+PROCESSORS=psu_cortexa53_0 psu_cortexa53_1 psu_cortexa53_2 psu_cortexa53_3 psu_cortexr5_0 psu_cortexr5_1 psu_pmu_0
+zocl:false
+ext_platform:
+hsi::generate_target: Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 744.039 ; gain = 1.645 ; free physical = 1816 ; free virtual = 9782
+ARC_UPDATED_DEVICE_TREE_PASS=1

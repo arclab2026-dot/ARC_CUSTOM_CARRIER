@@ -1,0 +1,1 @@
+4fe42f3a3d0bca9f8f532c71f22725c99a352a7f3a958a73c363ea9e456b9ecc  build/arc_kuiper_sd1_uart_test.img

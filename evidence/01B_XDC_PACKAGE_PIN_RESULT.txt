@@ -1,0 +1,7 @@
+Part : xczu7ev-fbvb900-1-e
+Vivado package pin objects: 900
+ARC_PIN_DB_READY=1
+Unique PACKAGE_PIN entries: 65
+Passes  : 65
+Failures: 0
+ARC_XDC_PACKAGE_PIN_PASS=1

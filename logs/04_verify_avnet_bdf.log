@@ -1,0 +1,20 @@
+
+****** Vivado v2022.2 (64-bit)
+  **** SW Build 3671981 on Fri Oct 14 04:59:54 MDT 2022
+  **** IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+source tcl/04_verify_avnet_bdf.tcl -notrace
+============================================================
+ARC CUSTOM CARRIER - AVNET BDF VERIFICATION
+============================================================
+BDF_ROOT=/home/arc/ARC_Development/ARC_CUSTOM_CARRIER/reference/vendor/avnet_bdf
+MATCH_COUNT=3
+BOARD_PART=avnet-tria:ultrazed_7ev_cc:part0:1.6
+BOARD_FPGA=xczu7ev-fbvb900-1-i
+BOARD_PART=avnet-tria:ultrazed_eg_iocc_production:part0:1.3
+BOARD_FPGA=xczu3eg-sfva625-1-i
+BOARD_PART=avnet-tria:ultrazed_eg_pciecc_production:part0:1.4
+BOARD_FPGA=xczu3eg-sfva625-1-i
+ARC_AVNET_BDF_PASS=1
+INFO: [Common 17-206] Exiting Vivado at Thu Sep 17 11:21:40 2026...

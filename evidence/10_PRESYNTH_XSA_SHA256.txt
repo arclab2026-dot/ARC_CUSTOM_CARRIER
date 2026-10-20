@@ -1,0 +1,2 @@
+5ce6bc3116e4ad091cb72f3397fe7901077aade84c4cd81dc53f42b476234585  build/handoff/arc_uzev_base_presynth.xsa
+1e34964c1184d93c237e7c1373dcd301f665ea187603b6607b7b21c275fd86e0  evidence/10_PRESYNTH_XSA_RESULT.txt

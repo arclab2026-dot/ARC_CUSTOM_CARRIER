@@ -1,0 +1,8 @@
+PROJECT_PART=xczu7ev-fbvb900-1-e
+CUSTOM_IP=/arc_ctrl_status_0
+CUSTOM_IP_VLNV=agileradiocom.com:user:arc_ctrl_status:1.0
+CONTROL_PORT_COUNT=1
+STATUS_PORT_COUNT=1
+XSA_FILE=/home/arc/ARC_Development/ARC_CUSTOM_CARRIER/build/handoff/arc_uzev_custom_registers_presynth.xsa
+XSA_SIZE=555916
+ARC_FINAL_CUSTOM_REGISTER_REFRESH_PASS=1

@@ -1,0 +1,1 @@
+039c1a64b2779d96895af612d6f3fdbda658cbfd9b480bc22bb45543746595d9  build/handoff/arc_uzev_custom_registers_with_bitstream.xsa

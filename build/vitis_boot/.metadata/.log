@@ -1,0 +1,19 @@
+!SESSION 2026-09-29 10:57:34.006 -----------------------------------------------
+eclipse.buildId=2022.2
+java.version=11.0.11
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Framework arguments:  -application com.xilinx.sdx.cmdline.service 46799
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -application com.xilinx.sdx.cmdline.service 46799 -data /home/arc/ARC_Development/ARC_CUSTOM_CARRIER/build/vitis_boot
+
+!ENTRY org.eclipse.osgi 4 0 2026-09-29 10:57:35.195
+!MESSAGE Bundle reference:file:org.apache.log4j_1.2.15.v201012070815.jar not found.
+
+!ENTRY org.eclipse.osgi 4 0 2026-09-29 10:57:35.293
+!MESSAGE Bundle reference:file:org.slf4j.impl.log4j12_1.7.2.v20131105-2200.jar not found.
+
+!ENTRY org.eclipse.cdt.core 1 0 2026-09-29 10:58:13.337
+!MESSAGE Indexed 'arc_uzev_boot' (945 sources, 1,207 headers) in 15.1 sec: 103,992 declarations; 333,484 references; 488 unresolved inclusions; 153 syntax errors; 4,640 unresolved names (1%)
+
+!ENTRY org.eclipse.core.resources 2 10035 2026-09-29 10:58:40.496
+!MESSAGE The workspace will exit with unsaved changes in this session.

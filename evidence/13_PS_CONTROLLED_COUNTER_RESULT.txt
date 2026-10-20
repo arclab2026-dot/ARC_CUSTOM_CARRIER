@@ -1,0 +1,7 @@
+PROJECT_PART=xczu7ev-fbvb900-1-e
+COUNTER_CELL=/arc_controlled_counter8_0
+CONTROL_SOURCE=axi_gpio_0/gpio_io_o
+STATUS_SOURCE=arc_controlled_counter8_0/count
+CONTROL_BIT0=ENABLE
+CONTROL_BIT1=CLEAR
+ARC_PS_CONTROLLED_COUNTER_PASS=1

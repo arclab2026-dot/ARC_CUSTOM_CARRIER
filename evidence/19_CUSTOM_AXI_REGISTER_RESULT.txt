@@ -1,0 +1,8 @@
+PROJECT_PART=xczu7ev-fbvb900-1-e
+CUSTOM_IP=/arc_ctrl_status_0
+CONTROL_CONNECTION=arc_ctrl_status_0/control_o
+STATUS_CONNECTION=arc_ctrl_status_0/status_i
+ADDR_SEG=/zynq_ultra_ps_e_0/Data/SEG_arc_ctrl_status_0_S_AXI_reg
+OFFSET=0x00A0000000
+RANGE=0x0000010000
+ARC_CUSTOM_AXI_REGISTER_INTEGRATION_PASS=1

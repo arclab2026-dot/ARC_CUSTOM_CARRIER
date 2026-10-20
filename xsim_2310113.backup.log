@@ -1,0 +1,40 @@
+#-----------------------------------------------------------
+# xsim v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 04:59:54 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Tue Sep 22 10:08:22 2026
+# Process ID: 2310113
+# Current directory: /home/arc/ARC_Development/ARC_CUSTOM_CARRIER
+# Command line: xsim -mode tcl -source {xsim.dir/arc_ps_pl_system_sim/xsim_script.tcl}
+# Log file: /home/arc/ARC_Development/ARC_CUSTOM_CARRIER/xsim.log
+# Journal file: /home/arc/ARC_Development/ARC_CUSTOM_CARRIER/xsim.jou
+# Running On: arc-iMac, OS: Linux, CPU Frequency: 1465.324 MHz, CPU Physical cores: 4, Host memory: 8215 MB
+#-----------------------------------------------------------
+source xsim.dir/arc_ps_pl_system_sim/xsim_script.tcl
+# xsim {arc_ps_pl_system_sim} -autoloadwcfg -runall
+Time resolution is 1 ps
+run -all
+============================================================
+ARC PS <-> PL SYSTEM SIMULATION
+============================================================
+[0 ns] Reset asserted
+[35000 ns] Reset released
+[75000 ns] PS WRITE: CONTROL = 0x01 (RUN)
+[75000 ns] PL control_o = 0x01
+[195000 ns] PS READ: STATUS = 0x0b
+[235000 ns] PS WRITE: CONTROL = 0x00 (HOLD)
+[295000 ns] HOLD STATUS #1 = 0x10
+[385000 ns] HOLD STATUS #2 = 0x10
+[425000 ns] PS WRITE: CONTROL = 0x02 (CLEAR)
+[485000 ns] PS READ: STATUS after CLEAR = 0x00
+------------------------------------------------------------
+RUN_TEST=PASS
+HOLD_TEST=PASS
+CLEAR_TEST=PASS
+PS_TO_PL_CONTROL_PASS=1
+PL_TO_PS_STATUS_PASS=1
+ARC_PS_PL_SYSTEM_SIM_PASS=1
+============================================================
+$finish called at time : 485 ns : File "/home/arc/ARC_Development/ARC_CUSTOM_CARRIER/sim/tb_arc_ps_pl_system.v" Line 256
+exit
+INFO: [Common 17-206] Exiting xsim at Tue Sep 22 10:08:33 2026...

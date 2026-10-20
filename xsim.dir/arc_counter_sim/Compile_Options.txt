@@ -1,0 +1,1 @@
+"tb_arc_controlled_counter8" -s "arc_counter_sim" 

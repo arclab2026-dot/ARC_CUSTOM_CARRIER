@@ -1,0 +1,13 @@
+============================================================
+ARC - GENERATE DEVICE TREE
+============================================================
+XSA=/home/arc/ARC_Development/ARC_CUSTOM_CARRIER/build/handoff/arc_uzev_custom_registers_with_bitstream.xsa
+DT_REPO=/home/arc/ARC_Development/boot_sources/device-tree-xlnx-2022.2
+OUTPUT=/home/arc/ARC_Development/ARC_CUSTOM_CARRIER/build/device_tree/generated
+INFO: [Hsi 55-2053] elapsed time for repository (/mnt/xilinx/Xilinx_Vitis_2022_2/Vitis/2022.2/data/embeddedsw) loading 6 seconds
+hsi::open_hw_design: Time (s): cpu = 00:00:07 ; elapsed = 00:00:15 . Memory (MB): peak = 678.391 ; gain = 155.285 ; free physical = 1538 ; free virtual = 10376
+PROCESSORS=psu_cortexa53_0 psu_cortexa53_1 psu_cortexa53_2 psu_cortexa53_3 psu_cortexr5_0 psu_cortexr5_1 psu_pmu_0
+zocl:false
+ext_platform:
+hsi::generate_target: Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 680.035 ; gain = 1.645 ; free physical = 1470 ; free virtual = 10324
+ARC_DEVICE_TREE_GENERATION_PASS=1

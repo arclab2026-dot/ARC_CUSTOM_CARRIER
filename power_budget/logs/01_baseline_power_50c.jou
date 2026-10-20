@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 04:59:54 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Thu Oct  8 10:35:17 2026
+# Process ID: 10767
+# Current directory: /home/arc/ARC_Development/ARC_CUSTOM_CARRIER
+# Command line: vivado -mode batch -source power_budget/scripts/01_baseline_power_50c.tcl -log power_budget/logs/01_baseline_power_50c.log -journal power_budget/logs/01_baseline_power_50c.jou
+# Log file: /home/arc/ARC_Development/ARC_CUSTOM_CARRIER/power_budget/logs/01_baseline_power_50c.log
+# Journal file: /home/arc/ARC_Development/ARC_CUSTOM_CARRIER/power_budget/logs/01_baseline_power_50c.jou
+# Running On: arc-iMac, OS: Linux, CPU Frequency: 3000.000 MHz, CPU Physical cores: 4, Host memory: 8215 MB
+#-----------------------------------------------------------
+source power_budget/scripts/01_baseline_power_50c.tcl

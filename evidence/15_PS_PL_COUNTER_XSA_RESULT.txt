@@ -1,0 +1,4 @@
+PROJECT_PART=xczu7ev-fbvb900-1-e
+XSA_FILE=/home/arc/ARC_Development/ARC_CUSTOM_CARRIER/build/handoff/arc_uzev_ps_pl_counter_presynth.xsa
+XSA_SIZE=556931
+ARC_PS_PL_COUNTER_XSA_PASS=1

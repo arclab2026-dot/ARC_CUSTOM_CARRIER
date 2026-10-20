@@ -1,0 +1,95 @@
+
+****** Vivado v2022.2 (64-bit)
+  **** SW Build 3671981 on Fri Oct 14 04:59:54 MDT 2022
+  **** IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+source tcl/01b_audit_historical_xdc_pins_pinplanning.tcl -notrace
+============================================================
+ARC CUSTOM CARRIER - HISTORICAL XDC PIN AUDIT V2
+============================================================
+create_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:11 . Memory (MB): peak = 1741.625 ; gain = 85.992 ; free physical = 188 ; free virtual = 948
+INFO: [Device 21-403] Loading part xczu7ev-fbvb900-1-e
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2836.414 ; gain = 0.000 ; free physical = 172 ; free virtual = 828
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2836.414 ; gain = 0.000 ; free physical = 163 ; free virtual = 759
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_io_design: Time (s): cpu = 00:00:08 ; elapsed = 00:01:35 . Memory (MB): peak = 2836.414 ; gain = 1093.789 ; free physical = 169 ; free virtual = 760
+Part : xczu7ev-fbvb900-1-e
+XDC  : /home/arc/ARC_Development/ARC_CUSTOM_CARRIER/reference/hardware_history/system_constr_historical.xdc
+Vivado package pin objects: 900
+ARC_PIN_DB_READY=1
+Unique PACKAGE_PIN entries: 65
+------------------------------------------------------------
+PASS  A3
+PASS  A4
+PASS  A7
+PASS  A8
+PASS  AE8
+PASS  AE9
+PASS  AF10
+PASS  AF11
+PASS  AF12
+PASS  AF2
+PASS  AF3
+PASS  AF5
+PASS  AF6
+PASS  AF7
+PASS  AF8
+PASS  AG1
+PASS  AG10
+PASS  AG11
+PASS  AG3
+PASS  AG4
+PASS  AG5
+PASS  AG6
+PASS  AG8
+PASS  AH1
+PASS  AH11
+PASS  AH12
+PASS  AH2
+PASS  AH3
+PASS  AH6
+PASS  AH7
+PASS  AH8
+PASS  AH9
+PASS  AJ10
+PASS  AJ11
+PASS  AJ12
+PASS  AJ4
+PASS  AJ5
+PASS  AJ6
+PASS  AJ7
+PASS  AK10
+PASS  AK11
+PASS  AK2
+PASS  AK3
+PASS  AK4
+PASS  AK5
+PASS  AK6
+PASS  AK7
+PASS  AK8
+PASS  AK9
+PASS  B1
+PASS  B10
+PASS  B2
+PASS  B5
+PASS  B6
+PASS  B9
+PASS  C3
+PASS  C4
+PASS  C7
+PASS  C8
+PASS  D1
+PASS  D10
+PASS  D2
+PASS  D5
+PASS  D6
+PASS  D9
+------------------------------------------------------------
+Passes  : 65
+Failures: 0
+ARC_XDC_PACKAGE_PIN_PASS=1
+INFO: [Common 17-206] Exiting Vivado at Thu Sep 17 11:10:27 2026...

@@ -1,0 +1,7 @@
+PROJECT_PART=xczu7ev-fbvb900-1-e
+IP_DIR=/home/arc/ARC_Development/ARC_CUSTOM_CARRIER/ip_repo/arc_ctrl_status_v1_0
+IP_NAME=arc_ctrl_status
+IP_VERSION=1.0
+AXI_INTERFACE=S_AXI
+AXI_TYPE=AXI4-LITE
+ARC_CUSTOM_AXI_IP_GENERATE_PASS=1

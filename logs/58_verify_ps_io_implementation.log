@@ -1,0 +1,60 @@
+
+****** Vivado v2022.2 (64-bit)
+  **** SW Build 3671981 on Fri Oct 14 04:59:54 MDT 2022
+  **** IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+source tcl/58_verify_ps_io_implementation.tcl -notrace
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/arc/ARC_Development/ARC_CUSTOM_CARRIER/ip_repo/arc_ctrl_status_v1_0'.
+WARNING: [IP_Flow 19-3685] Ignored loading user repository '/home/arc/ARC_Development/ARC_CUSTOM_CARRIER/ip_repo/arc_ctrl_status_v1_0/arc_ctrl_status_1_0'. The path is contained within another repository.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/mnt/xilinx/Xilinx_Vitis_2022_2/Vivado/2022.2/data/ip'.
+open_project: Time (s): cpu = 00:00:08 ; elapsed = 00:00:15 . Memory (MB): peak = 1803.309 ; gain = 163.656 ; free physical = 1922 ; free virtual = 9277
+INFO: [Device 21-403] Loading part xczu7ev-fbvb900-1-e
+Netlist sorting complete. Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.04 . Memory (MB): peak = 2841.270 ; gain = 0.000 ; free physical = 697 ; free virtual = 8334
+INFO: [Netlist 29-17] Analyzing 9 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2022.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Constraints 18-5170] The checkpoint was created with non-default parameter values which do not match the current Vivado settings.  Mismatching parameters are:
+  general.maxThreads
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF Files: Time (s): cpu = 00:00:00.97 ; elapsed = 00:00:01 . Memory (MB): peak = 3209.715 ; gain = 19.844 ; free physical = 317 ; free virtual = 7988
+Restored from archive | CPU: 1.000000 secs | Memory: 4.027657 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00.97 ; elapsed = 00:00:01 . Memory (MB): peak = 3209.715 ; gain = 19.844 ; free physical = 317 ; free virtual = 7988
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3610.840 ; gain = 0.000 ; free physical = 289 ; free virtual = 7611
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 7 instances were transformed.
+  RAM32M16 => RAM32M16 (RAMD32(x14), RAMS32(x2)): 5 instances
+  RAM32X1D => RAM32X1D (RAMD32(x2)): 2 instances
+
+open_run: Time (s): cpu = 00:00:34 ; elapsed = 00:00:43 . Memory (MB): peak = 3610.840 ; gain = 1807.531 ; free physical = 289 ; free virtual = 7611
+===== TIMING =====
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Temperature grade: E, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 4 CPUs
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Temperature grade: E, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 4 CPUs
+ARC_TIMING_PASS=1
+===== DRC =====
+Command: report_drc -return_string
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 4 threads
+report_drc completed successfully
+Command: report_drc -file evidence/58_DRC_REPORT.txt
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 4 threads
+INFO: [Vivado_Tcl 2-168] The results of DRC are in file /home/arc/ARC_Development/ARC_CUSTOM_CARRIER/evidence/58_DRC_REPORT.txt.
+report_drc completed successfully
+DRC_ERROR_COUNT=0
+DRC_CRITICAL_WARNING_COUNT=0
+ARC_DRC_PASS=1
+ARC_PS_IO_IMPLEMENTATION_VERIFY_PASS=1
+INFO: [Common 17-206] Exiting Vivado at Tue Oct 13 11:25:17 2026...

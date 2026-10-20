@@ -1,0 +1,4 @@
+Requested part : xczu7ev-fbvb900-1-e
+Vivado match   : xczu7ev-fbvb900-1-e
+Project part   : xczu7ev-fbvb900-1-e
+ARC_TARGET_PART_PASS=1

@@ -1,0 +1,17 @@
+
+****** Vivado v2022.2 (64-bit)
+  **** SW Build 3671981 on Fri Oct 14 04:59:54 MDT 2022
+  **** IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+source tcl/00_verify_target_part.tcl -notrace
+============================================================
+ARC CUSTOM CARRIER - TARGET PART VERIFICATION
+============================================================
+Requested part : xczu7ev-fbvb900-1-e
+Vivado match   : xczu7ev-fbvb900-1-e
+create_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:10 . Memory (MB): peak = 1733.387 ; gain = 86.992 ; free physical = 179 ; free virtual = 1258
+Project part   : xczu7ev-fbvb900-1-e
+ARC_TARGET_PART_PASS=1
+============================================================
+INFO: [Common 17-206] Exiting Vivado at Thu Sep 17 10:23:55 2026...
